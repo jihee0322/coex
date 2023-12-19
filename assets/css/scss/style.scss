@@ -141,21 +141,20 @@ section {
     color: #fff;
 }
 
-// .cont-area {
-//     height: 34.323vw;
-//     background: #f5f8ff url(../img/content/hero.jpg) no-repeat right top;
-//     background-size: contain;
-// }
+
+.cont-area{
+    background-color: #F5F8FF;
+}
 
 .cont-area .visual-wrap {
     display: flex;
-    height: 659px;
     background-color: #F5F8FF;
 }
 
 .visual-wrap .txt-box {
+    width: 980px;
     flex: 1;
-    padding: 130px 82px 217px 301px;
+    padding: 130px 82px 0 301px;
 }
 
 .visual-wrap .txt-box .title {
@@ -198,9 +197,15 @@ section {
 }
 
 .visual-wrap .img-box{
+    flex: 1;
+}
+
+.visual-wrap .img-box img{
+    flex: 1;
     height: auto;
     width: fit-content;
 }
+
 
 .search-area {
     position: relative;
@@ -952,11 +957,11 @@ section {
         padding: 30px 40px;
     }
 
-    .header-toggle{
+    .header .header-toggle{
         display: block;
     }
 
-    .header-toggle button{
+    .header .header-toggle button{
         width: 60px;
         height: 60px;
     }
@@ -974,6 +979,7 @@ section {
 
     .visual-wrap .txt-box{
         padding: 100px 60px;
+        width: 100%;
     }
 
     .visual-wrap .txt-box .title{
@@ -997,6 +1003,7 @@ section {
     .search-area{
         max-width: 640px;
         border-radius: 0px 0px 16px 16px;
+        padding: 60px 40px;
     }
 
     .search-area .input-area {
@@ -1006,6 +1013,16 @@ section {
 
     .search-area .input-area .input-group {
         width: 100%;
+    }
+    
+    .search-area .input-area .input-group label {
+        font-size: 24px;
+        color: #344054;
+    }
+
+    .search-area .input-area .input-group .inp-txt{
+        margin-top: 20px;
+        padding: 30px;
     }
 
     .search-area .input-area .input-group + .input-group{
