@@ -40,6 +40,7 @@ section {
 .chk-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 26px;
 }
 .chk-list li {
@@ -441,10 +442,6 @@ section {
   justify-content: space-between;
   align-items: flex-start;
 }
-.about .title-area {
-  margin-top: 25px;
-  padding-left: 108px;
-}
 .about .img-wrap .play-btn {
   width: 92px;
   height: 92px;
@@ -464,6 +461,10 @@ section {
   width: 401px;
   height: 455px;
   margin-top: 30px;
+}
+.about .title-area {
+  margin-top: 25px;
+  padding-left: 108px;
 }
 
 .trendy .img-city-list {
@@ -629,13 +630,13 @@ section {
   height: 20px;
   background: url(../img/content/plus.png) no-repeat 100%/contain;
 }
-.questions-list .questions.active {
+.questions-list .questions .quest-btn.active {
   border-radius: 8px 8px 0px 0px;
   border-color: #444CE7;
   background: #444CE7;
   color: #fff;
 }
-.questions-list .questions.active::after {
+.questions-list .questions .quest-btn.active::after {
   background: url(../img/content/minus.png) no-repeat 100%/contain;
 }
 .questions-list .questions .txt-box {

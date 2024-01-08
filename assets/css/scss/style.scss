@@ -46,6 +46,7 @@ section {
 .chk-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 26px;
     li {
         width: 260px;
@@ -136,7 +137,6 @@ section {
         color: #fff;
     }
 }
-
 
 .cont-area{
     background-color: #F5F8FF;
@@ -517,11 +517,6 @@ section {
     justify-content: space-between;
     align-items: flex-start;
 
-    .title-area {
-        margin-top: 25px;
-        padding-left: 108px;
-    }
-
     .img-wrap{
         .play-btn {
             width: 92px;
@@ -545,6 +540,11 @@ section {
             margin-top: 30px;
         }
     } 
+    
+    .title-area {
+        margin-top: 25px;
+        padding-left: 108px;
+    }
     
 }
 
@@ -730,18 +730,18 @@ section {
                 height: 20px;
                 background: url(../img/content/plus.png) no-repeat 100%/contain;
             }
+            &.active{
+                border-radius: 8px 8px 0px 0px;
+                border-color: #444CE7;
+                background: #444CE7;
+                color: #fff;
+                &::after {
+                    background: url(../img/content/minus.png) no-repeat 100%/contain;
+                }
+                
+            }
         }
 
-        &.active{
-            border-radius: 8px 8px 0px 0px;
-            border-color: #444CE7;
-            background: #444CE7;
-            color: #fff;
-            &::after {
-                background: url(../img/content/minus.png) no-repeat 100%/contain;
-            }
-            
-        }
 
         .txt-box {
             display: none;
