@@ -1064,7 +1064,7 @@ section {
   line-height: 24px;
   padding: 10px 20px;
   color: #667085;
-  background: #f0f0f0;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -1078,7 +1078,8 @@ section {
 .img-wrap {
   display: flex;
   position: relative;
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
 }
 .img-wrap .img-box {
   overflow: hidden;
