@@ -644,14 +644,14 @@
 
         //popular 스와이퍼
         function popularSwiper() {
-            if (windowWidth <= 1200 && swiperPopular == undefined) {
-                //device 가로 사이즈가 1200px 보다 작을 때,
-                swiperPopular = new Swiper(".popular .swiper", {
+            if (windowWidth <= 960 && swiperPopular == undefined) {
+                //device 가로 사이즈가 960px 보다 작을 때,
+                swiperPopular = new Swiper(".sec-01 .swiper", {
                     slidesPerView: "auto",
                     spaceBetween: 30,        
                 });
-            } else if (windowWidth > 1200 && swiperPopular !== undefined) {
-                //device 가로 사이즈가 1200px 보다 클 때,
+            } else if (windowWidth > 960 && swiperPopular !== undefined) {
+                //device 가로 사이즈가 960px 보다 클 때,
                 swiperPopular.destroy();
                 swiperPopular = undefined;
             }
