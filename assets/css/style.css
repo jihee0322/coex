@@ -600,34 +600,37 @@
   background: #F5F8FF;
   max-height: 428px;
 }
-
-.f-area {
+.footer .f-area {
   display: flex;
   align-items: flex-start;
   max-width: 1320px;
   margin: 0 auto;
 }
-.f-area .f-menu-group {
+.footer .f-area .logo {
+  width: 194px;
+  height: auto;
+}
+.footer .f-area .f-menu-group {
   display: flex;
   align-items: flex-start;
   margin-left: 256px;
 }
-.f-area .f-menu-group .f-menu .title {
+.footer .f-area .f-menu-group .f-menu .title {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   color: #344054;
 }
-.f-area .f-menu-group .f-menu .f-list li {
+.footer .f-area .f-menu-group .f-menu .f-list li {
   font-size: 14px;
   line-height: 20px;
   color: #667085;
   margin-top: 14px;
 }
-.f-area .f-menu-group .f-menu .f-list + li {
+.footer .f-area .f-menu-group .f-menu .f-list + li {
   margin-top: 15px;
 }
-.f-area .f-menu-group + .f-menu {
+.footer .f-area .f-menu-group + .f-menu {
   margin-left: 100px;
 }
 
@@ -718,6 +721,34 @@
   }
   .sec-04 .title-area {
     padding: 60px 0 0;
+  }
+  .sec-07 .item-group {
+    grid-template-columns: 1fr;
+  }
+  .sec-07 .item-group .item + .item {
+    margin-top: 60px;
+  }
+  .footer {
+    padding: 60px 40px;
+  }
+  .footer .f-area {
+    margin: 0;
+  }
+  .f-copyright .copyright-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .f-copyright .copyright-area .txt {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFF;
+  }
+  .f-copyright .copyright-area .card-img {
+    max-width: 224px;
   }
 }
 @media (max-width: 960px) {
@@ -1010,10 +1041,40 @@
   }
   .sec-06 .questions-list .questions .txt-box {
     padding: 2.22vw 2.78vw;
-    font-size: 1.94vw;
-    line-height: 3.33vw;
+    font-size: 3.33vw;
+    line-height: 1.5;
     border-radius: 0vw 0vw 0.83vw 0.83vw;
     border: 0.14vw solid #EAECF0;
     margin-top: -0.28vw;
+  }
+  .sec-07 .item-group {
+    margin-top: 6.94vw;
+  }
+  .sec-07 .item-group .item .item-img {
+    border-radius: 2.22vw;
+    overflow: hidden;
+  }
+  .sec-07 .item-group .item .txt-group {
+    margin-top: 2.78vw;
+    min-height: 0;
+  }
+  .sec-07 .item-group .item .txt-group .date {
+    font-size: 3.61vw;
+  }
+  .sec-07 .item-group .item .txt-group .txt {
+    font-size: 4.17vw;
+    margin-top: 1.39vw;
+  }
+  .sec-07 .item-group .item .more-btn {
+    width: 100%;
+    font-size: 3.61vw;
+    border-radius: 1.11vw;
+    box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
+    margin-top: 2.78vw;
+    padding: 4.17vw 0;
+  }
+  .sec-07 .item-group .item.type2 {
+    box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
+    margin-top: 2.78vw;
   }
 }
