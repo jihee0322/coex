@@ -658,14 +658,13 @@
                 color: #fff;
                 box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
                 margin-top: 20px;
+           
+                &.type2 {
+                    background-color: #E0EAFF;
+                    color: #344054;
+                }
             }
 
-            &.type2 {
-                background-color: #E0EAFF;
-                color: #344054;
-                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-                margin-top: 20px;
-            }
         }
     }
 }
@@ -721,78 +720,6 @@
 }
 
 
-.footer {
-    padding: 100px 0;
-    background: #F5F8FF;
-    max-height: 428px;
-    .f-area {
-        display: flex;
-        align-items: flex-start;
-        max-width: 1320px;
-        margin: 0 auto;
-
-        .logo{
-            width: 194px;
-            height: auto;
-        }
-    
-        .f-menu-group {
-            display: flex;
-            align-items: flex-start;
-            margin-left: 256px;
-    
-            .f-menu {
-                .title {
-                    font-size: 20px;
-                    font-weight: 600;
-                    line-height: 30px;
-                    color: #344054;
-                }
-    
-                .f-list {
-                    li {
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #667085;
-                        margin-top: 14px;
-                    }
-    
-                    +li {
-                        margin-top: 15px;
-                    }
-                }
-            }
-    
-            +.f-menu {
-                margin-left: 100px;
-            }
-        }
-    }
-}
-
-.f-copyright {
-    background: #444CE7;
-
-    .copyright-area {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 0;
-        max-width: 1320px;
-        margin: 0 auto;
-
-        .txt {
-            font-size: 14px;
-            line-height: 20px;
-            color: #FFF;
-        }
-
-        .card-img {
-            max-width: 224px;
-        }
-    }
-}
-
 
 /* 반응형 */
 
@@ -826,6 +753,18 @@
     .sec-02, .sec-04 {
         .title-area{
             padding-left: 60px;
+        }
+    }
+
+    .footer {
+        .f-area {
+            padding: 100px 40px;
+        }
+        
+        .f-copyright {
+            .copyright-area {
+                padding: 12px 40px;
+            }
         }
     }
 }
@@ -907,36 +846,6 @@
             }
         }
     }  
-
-    .footer{
-        padding: 60px 40px;
-        .f-area{
-            margin: 0;
-
-        }
-    }
-
-    .f-copyright {
-        .copyright-area {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 0;
-            max-width: 1320px;
-            margin: 0 auto;
-    
-            .txt {
-                font-size: 14px;
-                line-height: 20px;
-                color: #FFF;
-            }
-    
-            .card-img {
-                max-width: 224px;
-            }
-        }
-    }
-    
 }
 
 @media (max-width: 960px) {
@@ -968,6 +877,16 @@
         .questions-list {
             grid-template-columns: 1fr;
             gap: 10px;
+        }
+    }
+
+    .footer {
+        .f-area {
+            flex-direction: column;
+            .f-menu-group{
+                justify-content: space-between;
+                margin: 60px 0 0;
+            }
         }
     }
 }
@@ -1375,13 +1294,70 @@
                     font-size: 3.61vw;
                     border-radius: 1.11vw;
                     box-shadow: 0.00vw 0.14vw 0.28vw 0.00vw rgba(16, 24, 40, 0.05);
-                    margin-top: 2.78vw;
-                    padding: 4.17vw 0;
+                    margin-top: 5.56vw;
+                    padding: 3.17vw 0;
+                    
+                    &.type2 {
+                        margin-top: 5.56vw;
+                    }
                 }
     
-                &.type2 {
-                    box-shadow: 0.00vw 0.14vw 0.28vw 0.00vw rgba(16, 24, 40, 0.05);
-                    margin-top: 2.78vw;
+            }
+        }
+    }
+
+    .footer {
+        .f-area {
+            max-width: 183.33vw;
+            padding: 13.89vw 5.56vw;
+    
+            .f-logo{
+                width: 26.94vw;
+            }
+        
+            .f-menu-group {
+                flex-direction: column;
+                .f-menu {
+                    margin-right: 0;
+
+                    &+ .f-menu{
+                        margin-top: 6.94vw;
+                    }
+
+                    .title {
+                        font-size: 2.78vw;
+                        line-height: 4.17vw;
+                    }
+        
+                    .f-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 0;
+                        li {
+                            font-size: 3.33vw;
+                            margin-top: 2.78vw;
+                            margin-right: 5.56vw;
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        .f-copyright {
+            .copyright-area {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 5.56vw;
+                max-width: 183.33vw;
+        
+                .txt {
+                    font-size: 3.33vw;
+                }
+        
+                .card-img {
+                    max-width: 31.11vw;
+                    margin-top: 4.17vw;
                 }
             }
         }

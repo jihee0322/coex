@@ -988,45 +988,46 @@ img {
 }
 /* footer */
 .footer {
-  padding: 100px 0;
   background: #F5F8FF;
-  max-height: 428px;
 }
-
-.f-area {
+.footer .f-area {
   display: flex;
-  align-items: flex-start;
   max-width: 1320px;
+  padding: 100px 0;
   margin: 0 auto;
 }
-.f-area .f-menu-group {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 256px;
+.footer .f-area .f-logo {
+  width: 194px;
+  height: auto;
 }
-.f-area .f-menu-group .f-menu .title {
+.footer .f-area .f-menu-group {
+  display: flex;
+  margin-left: auto;
+}
+.footer .f-area .f-menu-group .f-menu {
+  margin-right: 80px;
+}
+.footer .f-area .f-menu-group .f-menu:last-child {
+  margin: 0;
+}
+.footer .f-area .f-menu-group .f-menu .title {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   color: #344054;
 }
-.f-area .f-menu-group .f-menu .f-list li {
+.footer .f-area .f-menu-group .f-menu .f-list li {
   font-size: 14px;
-  line-height: 20px;
   color: #667085;
   margin-top: 14px;
 }
-.f-area .f-menu-group .f-menu .f-list + li {
+.footer .f-area .f-menu-group .f-menu .f-list li + li {
   margin-top: 15px;
 }
-.f-area .f-menu-group + .f-menu {
-  margin-left: 100px;
-}
-
-.f-copyright {
+.footer .f-copyright {
   background: #444CE7;
 }
-.f-copyright .copyright-area {
+.footer .f-copyright .copyright-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1034,13 +1035,13 @@ img {
   max-width: 1320px;
   margin: 0 auto;
 }
-.f-copyright .copyright-area .txt {
+.footer .f-copyright .copyright-area .txt {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   color: #FFF;
 }
-.f-copyright .copyright-area .card-img {
+.footer .f-copyright .copyright-area .card-img {
   max-width: 224px;
 }
 
