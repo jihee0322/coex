@@ -1025,12 +1025,14 @@
     .sec-01{
         .title-area {
             .txt-ico {
+                display: flex;
+                align-items: center;
                 a {
                     font-size: 2.22vw;
                     line-height: 3.33vw;
     
                     &::after {
-                        width: 5.97vw;
+                        // width: 5.97vw;
                         height: 3.33vw;
                         margin-left: 0.83vw;
                     }

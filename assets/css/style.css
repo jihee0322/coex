@@ -800,12 +800,15 @@
   .title-area .txt-group {
     margin-bottom: 6.94vw;
   }
+  .sec-01 .title-area .txt-ico {
+    display: flex;
+    align-items: center;
+  }
   .sec-01 .title-area .txt-ico a {
     font-size: 2.22vw;
     line-height: 3.33vw;
   }
   .sec-01 .title-area .txt-ico a::after {
-    width: 5.97vw;
     height: 3.33vw;
     margin-left: 0.83vw;
   }
