@@ -1235,19 +1235,19 @@
     .sec-06 {
         .questions-list {
             margin-top: 0;
-            gap: 1.39vw;
+            gap: 0;
         
             .questions {
-        
                 .quest-btn {
+                    font-size: 3.61vw;
                     border-radius: 1.11vw;
                     border: 0.14vw solid #EAECF0;
-                    padding: 2.78vw;
+                    padding: 4.17vw;
         
                     &::after {
-                        right: 2.78vw;
-                        width: 2.78vw;
-                        height: 2.78vw;
+                        right: 4.17vw;
+                        width: 5.56vw;
+                        height: 5.56vw;
                     }
         
                     &.active {
@@ -1262,6 +1262,9 @@
                     border-radius: 0.00vw 0.00vw 0.83vw 0.83vw;
                     border: 0.14vw solid #EAECF0;
                     margin-top: -0.28vw;
+                }
+                + .questions{
+                    margin-top: 2.78vw;
                 }
             }
         }
@@ -1287,7 +1290,7 @@
     
                     .txt {
                         font-size: 4.17vw;
-                        margin-top: 1.39vw;
+                        margin-top: 2.78vw;
                     }
                 }
     
@@ -1327,8 +1330,7 @@
                     }
 
                     .title {
-                        font-size: 2.78vw;
-                        line-height: 4.17vw;
+                        font-size: 4.17vw;
                     }
         
                     .f-list {

@@ -957,17 +957,18 @@
   }
   .sec-06 .questions-list {
     margin-top: 0;
-    gap: 1.39vw;
+    gap: 0;
   }
   .sec-06 .questions-list .questions .quest-btn {
+    font-size: 3.61vw;
     border-radius: 1.11vw;
     border: 0.14vw solid #EAECF0;
-    padding: 2.78vw;
+    padding: 4.17vw;
   }
   .sec-06 .questions-list .questions .quest-btn::after {
-    right: 2.78vw;
-    width: 2.78vw;
-    height: 2.78vw;
+    right: 4.17vw;
+    width: 5.56vw;
+    height: 5.56vw;
   }
   .sec-06 .questions-list .questions .quest-btn.active {
     border-radius: 1.11vw 1.11vw 0vw 0vw;
@@ -979,6 +980,9 @@
     border-radius: 0vw 0vw 0.83vw 0.83vw;
     border: 0.14vw solid #EAECF0;
     margin-top: -0.28vw;
+  }
+  .sec-06 .questions-list .questions + .questions {
+    margin-top: 2.78vw;
   }
   .sec-07 .item-group {
     margin-top: 6.94vw;
@@ -996,7 +1000,7 @@
   }
   .sec-07 .item-group .item .txt-group .txt {
     font-size: 4.17vw;
-    margin-top: 1.39vw;
+    margin-top: 2.78vw;
   }
   .sec-07 .item-group .item .more-btn {
     width: 100%;
@@ -1026,8 +1030,7 @@
     margin-top: 6.94vw;
   }
   .footer .f-area .f-menu-group .f-menu .title {
-    font-size: 2.78vw;
-    line-height: 4.17vw;
+    font-size: 4.17vw;
   }
   .footer .f-area .f-menu-group .f-menu .f-list {
     display: flex;
