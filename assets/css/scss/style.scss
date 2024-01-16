@@ -13,13 +13,12 @@
             display: flex;
             align-items: center;
             font-size: 18px;
-            line-height: 28px;
             color: #444CE7;
             margin-bottom: 15px;
 
             &::before {
                 content: '';
-                display: inline-block;
+                display: inline-flex;
                 width: 35px;
                 height: 2px;
                 background-color: #444CE7;
@@ -31,14 +30,11 @@
         h2 {
             font-size: 36px;
             font-weight: 700;
-            line-height: 44px;
             color: #344054;
         }
 
         .desc {
             font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
             color: #667085;
             margin-top: 20px;
         }
@@ -53,12 +49,11 @@
 
     .txt {
         font-size: 16px;
-        line-height: 24px;
         color: #667085;
 
         &::before {
             content: '';
-            display: inline-block;
+            display: inline-flex;
             width: 20px;
             height: 20px;
             background: url(../img/content/check.svg) no-repeat center/100% auto;
@@ -96,14 +91,12 @@
 
                 li {
                     font-size: 14px;
-                    line-height: 1.4;
                     color: #667085;
 
                     strong {
                         display: block;
                         font-size: 24px;
                         font-weight: 600;
-                        line-height: 1.3;
                         color: #344054;
                     }
 
@@ -117,7 +110,6 @@
             .title {
                 font-size: 56px;
                 font-weight: 600;
-                line-height: 1.25;
                 letter-spacing: -1.12px;
                 color: #344054;
             }
@@ -125,8 +117,6 @@
             .desc {
                 margin-top: 15px;
                 font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5;
                 color: #667085;
             }
         }
@@ -162,7 +152,6 @@
                     color: #344054;
                     font-size: 18px;
                     font-weight: 600;
-                    line-height: 2.8;
                     text-align: center;
 
                     &:first-child {
@@ -199,7 +188,6 @@
 
                 label {
                     font-size: 14px;
-                    line-height: 1.4;
                     color: #344054;
                 }
 
@@ -223,7 +211,7 @@
                     height: 18px;
 
                     .icon {
-                        display: inline-block;
+                        display: inline-flex;
                         width: 100%;
                         height: 100%;
                         background-repeat: no-repeat;
@@ -250,7 +238,6 @@
                     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
                     color: #fff;
                     font-size: 16px;
-                    line-height: 1.5;
                 }
             }
         }
@@ -264,12 +251,11 @@
         .txt-ico {
             a {
                 font-size: 16px;
-                line-height: 24px;
                 color: #344054;
 
                 &::after {
                     content: '';
-                    display: inline-block;
+                    display: inline-flex;
                     width: 43px;
                     height: 24px;
                     vertical-align: top;
@@ -311,7 +297,6 @@
 
                     .address {
                         font-size: 14px;
-                        font-weight: 400;
                         color: #667085;
                         margin-top: 20px;
                         padding-left: 24px;
@@ -319,7 +304,7 @@
 
                         &::before {
                             content: '';
-                            display: inline-block;
+                            display: inline-flex;
                             width: 16px;
                             height: 16px;
                             background: url(../img/content/map-pin.svg) no-repeat center/100% auto;
@@ -330,12 +315,10 @@
 
                     .money {
                         font-size: 18px;
-                        line-height: 28px;
                         color: #667085;
 
                         span {
                             font-size: 14px;
-                            line-height: 20px;
                             letter-spacing: 0em;
                             padding: 2px 10px;
                             border-radius: 4px;
@@ -358,11 +341,9 @@
 
                     a {
                         font-size: 14px;
-                        line-height: 20px;
-                        letter-spacing: 0em;
                         padding: 6px 15px;
                         border-radius: 8px;
-                        color: #ffffff;
+                        color: #fff;
                         background: #444ce7;
                     }
                 }
@@ -391,7 +372,6 @@
     
                         span {
                             font-size: 14px;
-                            line-height: 20px;
                             color: #475467;
                         }
                     }
@@ -493,7 +473,6 @@
             bottom: 20px;
             font-size: 24px;
             font-weight: 600;
-            line-height: 32px;
             color: #FFF;
             z-index: 3;
         }
@@ -524,7 +503,6 @@
     
         .profile {
             font-size: 16px;
-            line-height: 26px;
             color: #667085;
             display: flex;
             flex-direction: column;
@@ -605,7 +583,6 @@
                 display: none;
                 padding: 16px 20px;
                 font-size: 14px;
-                line-height: 24px;
                 color: #667085;
                 border-radius: 0px 0px 6px 6px;
                 border: 1px solid #EAECF0;
@@ -645,7 +622,6 @@
                 .txt {
                     font-size: 20px;
                     font-weight: 600;
-                    line-height: 32px;
                     color: #344054;
                     margin-top: 10px;
                 }
@@ -945,6 +921,7 @@
         .search-area {
             margin-top: -22.22vw;
             margin-bottom: 16.67vw;
+            padding: 0 5.56vw;
 
             .tab-btn {
                 ul {
@@ -969,8 +946,8 @@
                 align-items: center;
                 flex-direction: column;
                 padding: 8.33vw 5.56vw;
-                border-radius: 0.00vw 0 2.22vw 2.22vw;
-                box-shadow: 0.00vw 0.83vw 4.17vw 0.00vw rgba(0, 0, 0, 0.06);
+                border-radius: 0vw 0 2.22vw 2.22vw;
+                box-shadow: 0vw 0.83vw 4.17vw 0vw rgba(0, 0, 0, 0.06);
 
                 .input-group {
                     width: 100%;
@@ -991,7 +968,7 @@
                         font-size: 3.33vw;
                         border-radius: 1.11vw;
                         border-width: 0.28vw;
-                        box-shadow: 0.00vw 0.14vw 0.28vw 0.00vw rgba(16, 24, 40, 0.05);
+                        box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
                     }
 
                     a {
@@ -1005,7 +982,7 @@
                     .btn {
                         padding: 2.78vw 3.89vw;
                         border-radius: 1.11vw;
-                        box-shadow: 0.00vw 0.14vw 0.28vw 0.00vw rgba(16, 24, 40, 0.05);
+                        box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
                         font-size: 3.89vw;
                         height: 13.33vw;
                     }
@@ -1022,21 +999,61 @@
         align-items: flex-start;
         flex-direction: column;
         .txt-group{
-            margin-bottom: 6.94vw;
+            margin-bottom: 5.56vw;
+            .top-txt{
+                font-size: 3.89vw;
+            }
+            
+            h2{
+                font-size: 6.39vw;
+                line-height: 1.3;
+            }
+
+            .desc{
+                font-size: 3.61vw;
+                margin-top: 5.56vw;
+            }
+            
+            .chk-list {
+                margin-top: 5.56vw;
+                gap: 0;
+                li{
+                    .txt{
+                        font-size: 3.61vw;
+                        &::before{
+                            width: 5vw;
+                            height: 5vw;
+                            margin-right: 1.39vw;
+                        }
+                    }
+                    + li{
+                        margin-top: 2.78vw;
+                    }
+                }
+            }
+
+            .basic-btn {
+                width: 100%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 13.33vw;
+                margin-top: 8.33vw;
+                box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
+                font-size: 3.61vw;
+            }
         }
     }
 
     .sec-01{
         .title-area {
             .txt-ico {
-                display: flex;
-                align-items: center;
                 a {
-                    font-size: 2.22vw;
-                    line-height: 3.33vw;
+                    display: flex;
+                    align-items: center;
+                    font-size:3.61vw;
     
                     &::after {
-                        // width: 5.97vw;
                         height: 3.33vw;
                         margin-left: 0.83vw;
                     }
@@ -1051,39 +1068,36 @@
                 .item {
                     border-radius: 2.22vw;
                     border: 0.14vw solid #F2F4F7;
-                    box-shadow: 0.00vw 0.56vw 4.17vw 0.00vw rgba(0, 0, 0, 0.05);
+                    box-shadow: 0vw 0.56vw 4.17vw 0vw rgba(0, 0, 0, 0.05);
     
                     .txt-group {
                         padding: 3.47vw 3.06vw;
     
                         .title {
-                            font-size: 2.78vw;
-                            margin-top: 2.08vw;
+                            font-size: 4.17vw;
+                            margin-top: 2.78vw;
                         }
     
                         .address {
-                            font-size: 1.94vw;
+                            font-size: 3.33vw;
                             margin-top: 2.78vw;
-                            padding-left: 3.33vw;
-                            text-indent: -3.33vw;
+                            padding-left: 4.44vw;
+                            text-indent: -4.44vw;
     
                             &::before {
-                                width: 2.22vw;
-                                height: 2.22vw;
+                                width: 3.33vw;
+                                height: 3.33vw;
                                 margin-right: 1.11vw;
                             }
                         }
     
                         .money {
-                            font-size: 2.50vw;
-                            line-height: 3.89vw;
+                            font-size: 3.89vw;
     
                             span {
-                                font-size: 1.94vw;
-                                line-height: 2.78vw;
-                                padding: 0.28vw 1.39vw;
+                                font-size: 3.33vw;
+                                padding: 1.11vw 2.22vw;
                                 border-radius: 0.56vw;
-                                color: #444ce7;
                                 margin-left: 2.78vw;
                             }
                         }
@@ -1095,9 +1109,8 @@
                         margin-bottom: 1.39vw;
     
                         a {
-                            font-size: 1.94vw;
-                            line-height: 2.78vw;
-                            padding: 0.83vw 2.08vw;
+                            font-size: 3.33vw;
+                            padding: 1.67vw 2.78vw;
                             border-radius: 1.11vw;
                         }
                     }
@@ -1109,17 +1122,31 @@
     
                     .info-group {
                         .info {    
-                            li+li {
-                                margin-left: 3.47vw;
+                            li{
+                                display: flex;
+                                align-items: center;
+                                +li {
+                                    margin-left: 6.94vw;
+                                }
                             }
+                            
     
                             img {
-                                margin-right: 1.11vw;
+                                width: 5.56vw;
+                                height: 5.56vw;
+                                margin-right: 2.78vw;
                             }
         
                             span {
-                                font-size: 1.94vw;
-                                line-height: 2.78vw;
+                                font-size: 3.33vw;
+                            }
+
+                            &.sqft{
+                                margin-top: 4.17vw;
+                                img{
+                                    width: 4.44vw;
+                                    height: 4.44vw;
+                                }
                             }
                         }
                     }
@@ -1161,10 +1188,10 @@
     
         .title-area {
             margin-top: 8.33vw;
-        }
 
-        .title-area .txt-group{
-            margin: 0;
+            .txt-group{
+                margin: 0;
+            }
         }
     }
     
@@ -1182,7 +1209,6 @@
                 left: 4.86vw;
                 bottom: 2.78vw;
                 font-size: 3.33vw;
-                line-height: 4.44vw;
             }
         }
     }
@@ -1212,7 +1238,6 @@
         
             .profile {
                 font-size: 2.22vw;
-                line-height: 3.61vw;
                 gap: 4.17vw;
                 border-radius: 2.22vw;
                 border: 0.14vw solid #F2F4F7;
@@ -1255,15 +1280,14 @@
                     }
         
                     &.active {
-                        border-radius: 1.11vw 1.11vw 0.00vw 0.00vw;
+                        border-radius: 1.11vw 1.11vw 0vw 0vw;
                     }
                 }
     
                 .txt-box {
                     padding: 2.22vw 2.78vw;
                     font-size: 3.33vw;
-                    line-height: 1.5;
-                    border-radius: 0.00vw 0.00vw 0.83vw 0.83vw;
+                    border-radius: 0vw 0vw 0.83vw 0.83vw;
                     border: 0.14vw solid #EAECF0;
                     margin-top: -0.28vw;
                 }
@@ -1302,7 +1326,7 @@
                     width: 100%;
                     font-size: 3.61vw;
                     border-radius: 1.11vw;
-                    box-shadow: 0.00vw 0.14vw 0.28vw 0.00vw rgba(16, 24, 40, 0.05);
+                    box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
                     margin-top: 5.56vw;
                     padding: 3.17vw 0;
                     

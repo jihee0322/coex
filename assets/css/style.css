@@ -8,13 +8,12 @@
   display: flex;
   align-items: center;
   font-size: 18px;
-  line-height: 28px;
   color: #444CE7;
   margin-bottom: 15px;
 }
 .title-area .txt-group .top-txt::before {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   width: 35px;
   height: 2px;
   background-color: #444CE7;
@@ -24,13 +23,10 @@
 .title-area .txt-group h2 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 44px;
   color: #344054;
 }
 .title-area .txt-group .desc {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   color: #667085;
   margin-top: 20px;
 }
@@ -43,12 +39,11 @@
 }
 .chk-list .txt {
   font-size: 16px;
-  line-height: 24px;
   color: #667085;
 }
 .chk-list .txt::before {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   width: 20px;
   height: 20px;
   background: url(../img/content/check.svg) no-repeat center/100% auto;
@@ -82,14 +77,12 @@
 }
 .sec-kv .visual-wrap .txt-box .num-txt li {
   font-size: 14px;
-  line-height: 1.4;
   color: #667085;
 }
 .sec-kv .visual-wrap .txt-box .num-txt li strong {
   display: block;
   font-size: 24px;
   font-weight: 600;
-  line-height: 1.3;
   color: #344054;
 }
 .sec-kv .visual-wrap .txt-box .num-txt li + li {
@@ -98,15 +91,12 @@
 .sec-kv .visual-wrap .txt-box .title {
   font-size: 56px;
   font-weight: 600;
-  line-height: 1.25;
   letter-spacing: -1.12px;
   color: #344054;
 }
 .sec-kv .visual-wrap .txt-box .desc {
   margin-top: 15px;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
   color: #667085;
 }
 .sec-kv .visual-wrap .img-box {
@@ -136,7 +126,6 @@
   color: #344054;
   font-size: 18px;
   font-weight: 600;
-  line-height: 2.8;
   text-align: center;
 }
 .sec-kv .search-area .tab-btn ul li:first-child {
@@ -166,7 +155,6 @@
 }
 .sec-kv .search-area .input-area .input-group label {
   font-size: 14px;
-  line-height: 1.4;
   color: #344054;
 }
 .sec-kv .search-area .input-area .input-group .inp-txt {
@@ -188,7 +176,7 @@
   height: 18px;
 }
 .sec-kv .search-area .input-area .input-group a .icon {
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -210,17 +198,15 @@
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   color: #fff;
   font-size: 16px;
-  line-height: 1.5;
 }
 
 .sec-01 .title-area .txt-ico a {
   font-size: 16px;
-  line-height: 24px;
   color: #344054;
 }
 .sec-01 .title-area .txt-ico a::after {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   width: 43px;
   height: 24px;
   vertical-align: top;
@@ -257,7 +243,6 @@
 }
 .sec-01 .popular-house-area .item-group .item .txt-group .address {
   font-size: 14px;
-  font-weight: 400;
   color: #667085;
   margin-top: 20px;
   padding-left: 24px;
@@ -265,7 +250,7 @@
 }
 .sec-01 .popular-house-area .item-group .item .txt-group .address::before {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   width: 16px;
   height: 16px;
   background: url(../img/content/map-pin.svg) no-repeat center/100% auto;
@@ -274,12 +259,10 @@
 }
 .sec-01 .popular-house-area .item-group .item .txt-group .money {
   font-size: 18px;
-  line-height: 28px;
   color: #667085;
 }
 .sec-01 .popular-house-area .item-group .item .txt-group .money span {
   font-size: 14px;
-  line-height: 20px;
   letter-spacing: 0em;
   padding: 2px 10px;
   border-radius: 4px;
@@ -298,11 +281,9 @@
 }
 .sec-01 .popular-house-area .item-group .item .item-btn a {
   font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0em;
   padding: 6px 15px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #fff;
   background: #444ce7;
 }
 .sec-01 .popular-house-area .item-group .txt-bottom {
@@ -326,7 +307,6 @@
 }
 .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info span {
   font-size: 14px;
-  line-height: 20px;
   color: #475467;
 }
 .sec-01 .popular-house-area .swiper-slide {
@@ -407,7 +387,6 @@
   bottom: 20px;
   font-size: 24px;
   font-weight: 600;
-  line-height: 32px;
   color: #FFF;
   z-index: 3;
 }
@@ -431,7 +410,6 @@
 }
 .sec-05 .profile-list .profile {
   font-size: 16px;
-  line-height: 26px;
   color: #667085;
   display: flex;
   flex-direction: column;
@@ -499,7 +477,6 @@
   display: none;
   padding: 16px 20px;
   font-size: 14px;
-  line-height: 24px;
   color: #667085;
   border-radius: 0px 0px 6px 6px;
   border: 1px solid #EAECF0;
@@ -529,7 +506,6 @@
 .sec-07 .item-group .item .txt-group .txt {
   font-size: 20px;
   font-weight: 600;
-  line-height: 32px;
   color: #344054;
   margin-top: 10px;
 }
@@ -740,6 +716,7 @@
   .sec-kv .search-area {
     margin-top: -22.22vw;
     margin-bottom: 16.67vw;
+    padding: 0 5.56vw;
   }
   .sec-kv .search-area .tab-btn ul li {
     flex: 1;
@@ -801,15 +778,48 @@
     flex-direction: column;
   }
   .title-area .txt-group {
-    margin-bottom: 6.94vw;
+    margin-bottom: 5.56vw;
   }
-  .sec-01 .title-area .txt-ico {
-    display: flex;
+  .title-area .txt-group .top-txt {
+    font-size: 3.89vw;
+  }
+  .title-area .txt-group h2 {
+    font-size: 6.39vw;
+    line-height: 1.3;
+  }
+  .title-area .txt-group .desc {
+    font-size: 3.61vw;
+    margin-top: 5.56vw;
+  }
+  .title-area .txt-group .chk-list {
+    margin-top: 5.56vw;
+    gap: 0;
+  }
+  .title-area .txt-group .chk-list li .txt {
+    font-size: 3.61vw;
+  }
+  .title-area .txt-group .chk-list li .txt::before {
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1.39vw;
+  }
+  .title-area .txt-group .chk-list li + li {
+    margin-top: 2.78vw;
+  }
+  .title-area .txt-group .basic-btn {
+    width: 100%;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    height: 13.33vw;
+    margin-top: 8.33vw;
+    box-shadow: 0vw 0.14vw 0.28vw 0vw rgba(16, 24, 40, 0.05);
+    font-size: 3.61vw;
   }
   .sec-01 .title-area .txt-ico a {
-    font-size: 2.22vw;
-    line-height: 3.33vw;
+    display: flex;
+    align-items: center;
+    font-size: 3.61vw;
   }
   .sec-01 .title-area .txt-ico a::after {
     height: 3.33vw;
@@ -827,30 +837,27 @@
     padding: 3.47vw 3.06vw;
   }
   .sec-01 .popular-house-area .item-group .item .txt-group .title {
-    font-size: 2.78vw;
-    margin-top: 2.08vw;
+    font-size: 4.17vw;
+    margin-top: 2.78vw;
   }
   .sec-01 .popular-house-area .item-group .item .txt-group .address {
-    font-size: 1.94vw;
+    font-size: 3.33vw;
     margin-top: 2.78vw;
-    padding-left: 3.33vw;
-    text-indent: -3.33vw;
+    padding-left: 4.44vw;
+    text-indent: -4.44vw;
   }
   .sec-01 .popular-house-area .item-group .item .txt-group .address::before {
-    width: 2.22vw;
-    height: 2.22vw;
+    width: 3.33vw;
+    height: 3.33vw;
     margin-right: 1.11vw;
   }
   .sec-01 .popular-house-area .item-group .item .txt-group .money {
-    font-size: 2.5vw;
-    line-height: 3.89vw;
+    font-size: 3.89vw;
   }
   .sec-01 .popular-house-area .item-group .item .txt-group .money span {
-    font-size: 1.94vw;
-    line-height: 2.78vw;
-    padding: 0.28vw 1.39vw;
+    font-size: 3.33vw;
+    padding: 1.11vw 2.22vw;
     border-radius: 0.56vw;
-    color: #444ce7;
     margin-left: 2.78vw;
   }
   .sec-01 .popular-house-area .item-group .item .item-btn {
@@ -859,24 +866,35 @@
     margin-bottom: 1.39vw;
   }
   .sec-01 .popular-house-area .item-group .item .item-btn a {
-    font-size: 1.94vw;
-    line-height: 2.78vw;
-    padding: 0.83vw 2.08vw;
+    font-size: 3.33vw;
+    padding: 1.67vw 2.78vw;
     border-radius: 1.11vw;
   }
   .sec-01 .popular-house-area .item-group .txt-bottom {
     border-top: 0.14vw solid #F2F4F7;
     padding: 3.06vw;
   }
+  .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info li {
+    display: flex;
+    align-items: center;
+  }
   .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info li + li {
-    margin-left: 3.47vw;
+    margin-left: 6.94vw;
   }
   .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info img {
-    margin-right: 1.11vw;
+    width: 5.56vw;
+    height: 5.56vw;
+    margin-right: 2.78vw;
   }
   .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info span {
-    font-size: 1.94vw;
-    line-height: 2.78vw;
+    font-size: 3.33vw;
+  }
+  .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info.sqft {
+    margin-top: 4.17vw;
+  }
+  .sec-01 .popular-house-area .item-group .txt-bottom .info-group .info.sqft img {
+    width: 4.44vw;
+    height: 4.44vw;
   }
   .sec-01 .popular-house-area .swiper-slide {
     width: 80.56vw;
@@ -921,7 +939,6 @@
     left: 4.86vw;
     bottom: 2.78vw;
     font-size: 3.33vw;
-    line-height: 4.44vw;
   }
   .sec-04 .title-area {
     padding: 8.33vw 0 0;
@@ -941,7 +958,6 @@
   }
   .sec-05 .profile-list .profile {
     font-size: 2.22vw;
-    line-height: 3.61vw;
     gap: 4.17vw;
     border-radius: 2.22vw;
     border: 0.14vw solid #F2F4F7;
@@ -979,7 +995,6 @@
   .sec-06 .questions-list .questions .txt-box {
     padding: 2.22vw 2.78vw;
     font-size: 3.33vw;
-    line-height: 1.5;
     border-radius: 0vw 0vw 0.83vw 0.83vw;
     border: 0.14vw solid #EAECF0;
     margin-top: -0.28vw;
