@@ -849,6 +849,16 @@
         }
     }
 
+    .sec-05{
+        .profile-list {
+            .swiper-slide{
+                flex: none;
+                width: 560px;
+            }
+        }
+    }
+
+
     .sec-06{
         .questions-list {
             grid-template-columns: 1fr;
@@ -1013,7 +1023,7 @@
                 font-size: 3.61vw;
                 margin-top: 5.56vw;
             }
-            
+
             .chk-list {
                 margin-top: 5.56vw;
                 gap: 0;
@@ -1237,11 +1247,12 @@
             margin-top: 6.94vw;
         
             .profile {
-                font-size: 2.22vw;
+                font-size: 3.61vw;
                 gap: 4.17vw;
                 border-radius: 2.22vw;
                 border: 0.14vw solid #F2F4F7;
                 padding: 4.17vw;
+                width: 77.78vw;
         
                 .person-box {
                     width: 9.72vw;
@@ -1250,13 +1261,13 @@
                 }
         
                 .person {
-                    font-size: 2.22vw;
+                    .name-group{
+                        font-size: 3.61vw;
+                        .name{
+                            font-size: 4.17vw;
+                        }
+                    }
                 }
-        
-                .name-group .name {
-                    font-size: 2.78vw;
-                }
-        
             }
         }
     }
@@ -1275,8 +1286,8 @@
         
                     &::after {
                         right: 4.17vw;
-                        width: 5.56vw;
-                        height: 5.56vw;
+                        width: 4.17vw;
+                        height: 4.17vw;
                     }
         
                     &.active {
@@ -1292,7 +1303,7 @@
                     margin-top: -0.28vw;
                 }
                 + .questions{
-                    margin-top: 2.78vw;
+                    margin-top: 4.17vw;
                 }
             }
         }

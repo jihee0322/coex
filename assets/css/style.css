@@ -662,6 +662,10 @@
     flex: none;
     width: 770px;
   }
+  .sec-05 .profile-list .swiper-slide {
+    flex: none;
+    width: 560px;
+  }
   .sec-06 .questions-list {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -957,22 +961,23 @@
     margin-top: 6.94vw;
   }
   .sec-05 .profile-list .profile {
-    font-size: 2.22vw;
+    font-size: 3.61vw;
     gap: 4.17vw;
     border-radius: 2.22vw;
     border: 0.14vw solid #F2F4F7;
     padding: 4.17vw;
+    width: 77.78vw;
   }
   .sec-05 .profile-list .profile .person-box {
     width: 9.72vw;
     border-radius: 1.11vw;
     margin-right: 3.33vw;
   }
-  .sec-05 .profile-list .profile .person {
-    font-size: 2.22vw;
+  .sec-05 .profile-list .profile .person .name-group {
+    font-size: 3.61vw;
   }
-  .sec-05 .profile-list .profile .name-group .name {
-    font-size: 2.78vw;
+  .sec-05 .profile-list .profile .person .name-group .name {
+    font-size: 4.17vw;
   }
   .sec-06 .questions-list {
     margin-top: 0;
@@ -986,8 +991,8 @@
   }
   .sec-06 .questions-list .questions .quest-btn::after {
     right: 4.17vw;
-    width: 5.56vw;
-    height: 5.56vw;
+    width: 4.17vw;
+    height: 4.17vw;
   }
   .sec-06 .questions-list .questions .quest-btn.active {
     border-radius: 1.11vw 1.11vw 0vw 0vw;
@@ -1000,7 +1005,7 @@
     margin-top: -0.28vw;
   }
   .sec-06 .questions-list .questions + .questions {
-    margin-top: 2.78vw;
+    margin-top: 4.17vw;
   }
   .sec-07 .item-group {
     margin-top: 6.94vw;
