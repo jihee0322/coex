@@ -658,34 +658,21 @@
         }
 
         //testmonial 스와이퍼
-        function popularSwiper() {
-            if (windowWidth <= 960 && swiperPopular == undefined) {
-                //device 가로 사이즈가 960px 보다 작을 때,
-                swiperPopular = new Swiper(".sec-05 .swiper", {
-                    slidesPerView: "auto",
-                    spaceBetween: 30,        
-                });
-            } else if (windowWidth > 960 && swiperPopular !== undefined) {
-                //device 가로 사이즈가 960px 보다 클 때,
-                swiperPopular.destroy();
-                swiperPopular = undefined;
-            }
+        function testmonialSwiper() {
+            const swiper = new Swiper(".sec-05 .swiper", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    1280: {
+                        slidesPerView: 3
+                    },
+                }
+            });
         }
-        // function testmonialSwiper() {
-        //     const swiper = new Swiper(".sec-05 .swiper", {
-        //         slidesPerView: "auto",
-        //         spaceBetween: 30,
-        //         navigation: {
-        //             nextEl: ".swiper-button-next",
-        //             prevEl: ".swiper-button-prev",
-        //         },
-        //         breakpoints: {
-        //             1280: {
-        //                 slidesPerView: 3
-        //             },
-        //         }
-        //     });
-        // }
     </script>
 </body>
 
