@@ -10,15 +10,17 @@
 
 .visual{display: flex; margin-top: 67px; width: 100%; height: 565px;}
 
-.visual .txt-box {position: relative; width: 50%;}
+.visual .txt-box {position: relative; 
+    width: calc(100% - 565px);
+}
 .visual .txt-box .top-tit{font-size: 27px; color: #ED3DA6; margin-bottom: 10px;}
 .visual .txt-box .txt{
-	position: absolute; 
+// position: absolute; 
 }
 .visual .txt-box .txt.active { 
 }
 
-// .visual .txt-box .txt .tit{overflow: hidden; height: 48px;}
+.visual .txt-box .txt .tit{overflow: hidden; height: 90px; position: absolute;}
 .visual .txt-box .txt .tit span{
 	display: inline-block;
 	font-size: 64px; 
@@ -28,15 +30,15 @@
 	/* transition - 변경되는 CSS 변화를 부드럽게 하기 위해 애니메이션 속도 조절 */
 	transition: transform 0.5s;
 }
-.visual .txt-box .txt .desc{margin-top: 40px; opacity: 0;}
+.visual .txt-box .txt .desc{position: absolute; bottom: 0; opacity: 0;}
 .visual .txt-box .txt.active .tit span{
 	/* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기	 */
 	opacity: 1; 
 	transform: translate(0, 0);
 }
-.visual .txt-box .txt.active .desc{opacity: 1;}
+.visual .txt-box .txt.active .desc{opacity: 1; display: flex; flex-direction: column;}
 
-.visual .main-slide{width: 50%;  height: 100%;}
+.visual .main-slide{width: 565px;  height: 100%; overflow: hidden; background-size: contain;}
 .visual .main-slide .slide01 { background: url(../img/content/visual_img_01.jpg) no-repeat 100%/auto;}
 .visual .main-slide .slide02 { background: url(../img/content/visual_img_02.png) no-repeat 100%/auto;}
 .visual .main-slide .slide03 { background: url(../img/content/visual_img_03.jpg) no-repeat 100%/auto;}

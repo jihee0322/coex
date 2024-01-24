@@ -14,7 +14,7 @@
 
 .visual .txt-box {
   position: relative;
-  width: 50%;
+  width: calc(100% - 565px);
 }
 
 .visual .txt-box .top-tit {
@@ -23,7 +23,9 @@
   margin-bottom: 10px;
 }
 
-.visual .txt-box .txt {
+.visual .txt-box .txt .tit {
+  overflow: hidden;
+  height: 90px;
   position: absolute;
 }
 
@@ -38,7 +40,8 @@
 }
 
 .visual .txt-box .txt .desc {
-  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
   opacity: 0;
 }
 
@@ -50,11 +53,15 @@
 
 .visual .txt-box .txt.active .desc {
   opacity: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .visual .main-slide {
-  width: 50%;
+  width: 565px;
   height: 100%;
+  overflow: hidden;
+  background-size: contain;
 }
 
 .visual .main-slide .slide01 {
