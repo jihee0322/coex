@@ -45,6 +45,7 @@
 .visual .visual-area .main-slide .slide05 { background: url(../img/content/visual_img_05.png) no-repeat 100%/auto;}
 
 
+/* sec-01 */
 .sec-01{margin-bottom: 175px;}
 .sec-01 .info-area{display: flex;}
 .sec-01 .info-area .info-box{padding: 40px 43px; position: relative; width: 430px; background-color: #000; color: #fff;}
@@ -85,8 +86,87 @@
 }
 
 .sec-01 .info-area .guide .guide-group .guide-list .list-item a{display: block; border-bottom: solid 1px #000; position: relative; padding-top: 67px; padding-bottom: 7px; text-align: right;}
-
 .sec-01 .info-area .guide .guide-list .list-item a span{font-size: 20px; font-weight: 600; line-height: 0;}
+
+/* sec-02ee */
+.sec-02 .event{position:relative; margin-bottom: 156px;}
+.sec-02 .event .event-title{
+    position: absolute;
+    padding-right: 41px;
+}
+.sec-02 .event .event-title h2{ font-size: 50px; font-weight: 700;}
+.sec-02 .event .event-title h2 span{ 
+    position: absolute;
+    top: -6px;
+    right: 0;
+    font-size: 30px;
+    font-weight:400;
+}
+
+
+.sec-02 .event .event-list{display: flex; flex-wrap: wrap; width: 100%; height: 100%;}
+.sec-02 .event .event-list .list{width: 25%;}
+.sec-02 .event .event-list .list:first-child{margin-left: 50%;}
+
+.sec-02 .event .event-list .list .list-link{ position: relative; display: block; padding: 35px 36px; border-left: 2px solid #000; border-right: 0; overflow: hidden; width: 100%; height: 429px;}
+.sec-02 .event .event-list .list:nth-child(3) .list-link, .sec-02 .event .event-list .list:nth-child(7) .list-link { border-color: transparent;}
+
+.sec-02 .event .event-list .list .list-link:before{ content: ''; display: block; width: calc(100% - 16px); height: 2px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background-color: #000;}
+.sec-02 .event .event-list .list .list-link:after{ content: ''; display: block; width: calc(100% - 16px); height: 2px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background-color: #000;}
+
+.sec-02 .event .event-list .list .img-box{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    opacity: 0;
+    transition-duration: 0.25s;
+}
+
+.sec-02 .event .event-list .list .img-box:hover{
+    filter: blur(0);
+    opacity: 1;
+}
+
+.sec-02 .event .event-list .list .img-box img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec-02 .event .event-list .list .txt-group{ 
+    display: flex;
+    flex-direction: column;
+}
+.sec-02 .event .event-list .list .txt-group .sub-tit{ margin-bottom: 11px; padding-left: 14px;}
+.sec-02 .event .event-list .list .txt-group .tit{
+    font-size: 30px;
+    font-weight: 600;
+    height: 90px;
+    margin-bottom: 205px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    display: -webkit-box;
+}
+.sec-02 .event .event-list .list .txt-group .date{font-size: 20px; font-weight: 600;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
