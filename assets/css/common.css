@@ -913,7 +913,7 @@ img {
   height: 100%;
 }
 
-.container {
+.inner {
   max-width: 1720px;
   margin: 0 auto;
 }

@@ -6,32 +6,35 @@
 }
 
 .visual {
+  padding: 67px 0 87px;
+}
+
+.visual .visual-area {
   display: flex;
-  margin-top: 67px;
-  width: 100%;
+  max-width: 1720px;
   height: 565px;
 }
 
-.visual .txt-box {
+.visual .visual-area .txt-box {
   position: relative;
   width: calc(100% - 565px);
 }
 
-.visual .txt-box .top-tit {
+.visual .visual-area .txt-box .top-tit {
   font-size: 27px;
   color: #ED3DA6;
   margin-bottom: 10px;
 }
 
-.visual .txt-box .txt .tit {
+.visual .visual-area .txt-box .txt .tit {
   overflow: hidden;
-  height: 90px;
   position: absolute;
 }
 
-.visual .txt-box .txt .tit span {
+.visual .visual-area .txt-box .txt .tit span {
   display: inline-block;
   font-size: 64px;
+  font-weight: 700;
   /* 초기 txt 셋팅 - opacity: 0, transform: translate(x축, y축); y축 위치를 -20% 밑에서 시작 */
   opacity: 0;
   transform: translate(0, 100%);
@@ -39,47 +42,157 @@
   transition: transform 0.5s;
 }
 
-.visual .txt-box .txt .desc {
+.visual .visual-area .txt-box .txt .desc {
   position: absolute;
   bottom: 0;
   opacity: 0;
+  font-size: 26px;
+  font-weight: 600;
 }
 
-.visual .txt-box .txt.active .tit span {
-  /* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기	 */
+.visual .visual-area .txt-box .txt.active .tit span {
+  /* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.visual .txt-box .txt.active .desc {
+.visual .visual-area .txt-box .txt.active .desc {
   opacity: 1;
   display: flex;
   flex-direction: column;
 }
 
-.visual .main-slide {
+.visual .visual-area .main-slide {
+  position: relative;
   width: 565px;
   height: 100%;
-  overflow: hidden;
   background-size: contain;
+  overflow: hidden;
 }
 
-.visual .main-slide .slide01 {
+.visual .visual-area .swiper-pagination {
+  bottom: -30px;
+}
+
+.visual .visual-area .main-slide .slide01 {
   background: url(../img/content/visual_img_01.jpg) no-repeat 100%/auto;
 }
 
-.visual .main-slide .slide02 {
+.visual .visual-area .main-slide .slide02 {
   background: url(../img/content/visual_img_02.png) no-repeat 100%/auto;
 }
 
-.visual .main-slide .slide03 {
+.visual .visual-area .main-slide .slide03 {
   background: url(../img/content/visual_img_03.jpg) no-repeat 100%/auto;
 }
 
-.visual .main-slide .slide04 {
+.visual .visual-area .main-slide .slide04 {
   background: url(../img/content/visual_img_04.jpg) no-repeat 100%/auto;
 }
 
-.visual .main-slide .slide05 {
+.visual .visual-area .main-slide .slide05 {
   background: url(../img/content/visual_img_05.png) no-repeat 100%/auto;
+}
+
+.sec-01 {
+  margin-bottom: 175px;
+}
+
+.sec-01 .info-area {
+  display: flex;
+}
+
+.sec-01 .info-area .info-box {
+  padding: 40px 43px;
+  position: relative;
+  width: 430px;
+  background-color: #000;
+  color: #fff;
+}
+
+.sec-01 .info-area .info-box::after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 116px;
+  height: 92px;
+  background-image: url(../img/content/ico_map.png);
+  background-size: 100% auto;
+}
+
+.sec-01 .info-area .top-txt {
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+
+.sec-01 .info-area .txt {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.sec-01 .info-area .guide {
+  display: flex;
+  align-items: end;
+  background-color: #F8F8F8;
+  padding: 40px 43px;
+  width: calc(100% - 430px);
+}
+
+.sec-01 .info-area .guide .guide-box {
+  width: 40%;
+}
+
+.sec-01 .info-area .guide .guide-group {
+  width: 60%;
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list {
+  display: flex;
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list .list-item {
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list .list-item a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list .list-item.ico-parking a::before {
+  width: 71px;
+  height: 85px;
+  background-image: url(../img/content/ico_guide_1.svg);
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list .list-item.ico-directions a::before {
+  width: 66px;
+  height: 90px;
+  background-image: url(../img/content/ico_guide_2.svg);
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list .list-item.ico-amenities a::before {
+  width: 93px;
+  height: 870px;
+  background-image: url(../img/content/ico_guide_3.svg);
+}
+
+.sec-01 .info-area .guide .guide-group .guide-list .list-item a {
+  display: block;
+  border-bottom: solid 1px #000;
+  position: relative;
+  padding-top: 67px;
+  padding-bottom: 7px;
+  text-align: right;
+}
+
+.sec-01 .info-area .guide .guide-list .list-item a span {
+  font-size: 20px;
+  font-weight: 500;
 }
