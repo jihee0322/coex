@@ -124,6 +124,7 @@
 .sec-01 .info-area .top-txt {
   margin-bottom: 13px;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .sec-01 .info-area .txt {
@@ -178,8 +179,8 @@
 }
 
 .sec-01 .info-area .guide .guide-group .guide-list .list-item.ico-amenities a::before {
-  width: 93px;
-  height: 870px;
+  width: 92px;
+  height: 87px;
   background-image: url(../img/content/ico_guide_3.svg);
 }
 
@@ -194,5 +195,6 @@
 
 .sec-01 .info-area .guide .guide-list .list-item a span {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 0;
 }

@@ -49,7 +49,7 @@
 .sec-01 .info-area{display: flex;}
 .sec-01 .info-area .info-box{padding: 40px 43px; position: relative; width: 430px; background-color: #000; color: #fff;}
 .sec-01 .info-area .info-box::after{content: "";position: absolute;bottom: 25px;right: 25px;width: 116px;height: 92px;background-image: url(../img/content/ico_map.png);background-size: 100% auto;}
-.sec-01 .info-area .top-txt{margin-bottom: 13px; font-size: 18px;}
+.sec-01 .info-area .top-txt{margin-bottom: 13px; font-size: 18px; font-weight: 600;}
 .sec-01 .info-area .txt{font-size: 28px; font-weight: 500;}
 .sec-01 .info-area .guide{display: flex; align-items: end; background-color: #F8F8F8; padding: 40px 43px; width: calc(100% - 430px);}
 
@@ -79,21 +79,14 @@
 }
 
 .sec-01 .info-area .guide .guide-group .guide-list .list-item.ico-amenities a::before{
-    width: 93px;
-    height: 870px;
+    width: 92px;
+    height: 87px;
     background-image: url(../img/content/ico_guide_3.svg);
 }
 
-.sec-01 .info-area .guide .guide-group .guide-list .list-item a{
-    display: block;
-    border-bottom: solid 1px #000;
-    position: relative;
-    padding-top: 67px;
-    padding-bottom: 7px;
-    text-align: right;
-}
+.sec-01 .info-area .guide .guide-group .guide-list .list-item a{display: block; border-bottom: solid 1px #000; position: relative; padding-top: 67px; padding-bottom: 7px; text-align: right;}
 
-.sec-01 .info-area .guide .guide-list .list-item a span{font-size: 20px; font-weight: 500;}
+.sec-01 .info-area .guide .guide-list .list-item a span{font-size: 20px; font-weight: 600; line-height: 0;}
 
 
 
