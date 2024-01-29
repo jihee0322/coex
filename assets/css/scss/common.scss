@@ -129,7 +129,7 @@ $total: 10;
 		display: flex;
 		align-items: center;
     	justify-content: space-between;
-		height: 60px;
+		height: 66px;
 		color: #fff;
 
 		.logo{
@@ -141,6 +141,7 @@ $total: 10;
 			.nav-menu{
 				display: flex;
 				align-items: center;
+				margin: 0 auto;
 				li{
 					+ li{
 						margin-left: 36px;
@@ -152,6 +153,12 @@ $total: 10;
 						background-color: #F147AC;
 						color: #fff;
 					}
+					a{
+						font-weight: 600;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 		}
@@ -162,6 +169,15 @@ $total: 10;
 				+ li{
 					margin-left: 10px;
 				}
+				a{
+					font-size: 17px;
+				}
+				&.active{
+					a{
+						font-weight: 600;
+						text-decoration: underline;		
+					}
+				}
 			}
 		}
 		.top-search{
@@ -170,7 +186,7 @@ $total: 10;
 				position: absolute;
 				top: 50%;
 				transform: translateY(-50%);
-				right: 150px;
+				right: 110px;
 				display: inline-block;
 				width: 29px;
 				height: 28px;

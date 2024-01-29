@@ -865,7 +865,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 66px;
   color: #fff;
 }
 .header .top-menu .logo {
@@ -875,6 +875,7 @@ img {
 .header .top-menu .nav .nav-menu {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 .header .top-menu .nav .nav-menu li + li {
   margin-left: 36px;
@@ -886,6 +887,12 @@ img {
   background-color: #F147AC;
   color: #fff;
 }
+.header .top-menu .nav .nav-menu li a {
+  font-weight: 600;
+}
+.header .top-menu .nav .nav-menu li a:hover {
+  text-decoration: underline;
+}
 .header .top-menu .country {
   display: flex;
   align-items: center;
@@ -893,12 +900,19 @@ img {
 .header .top-menu .country li + li {
   margin-left: 10px;
 }
+.header .top-menu .country li a {
+  font-size: 17px;
+}
+.header .top-menu .country li.active a {
+  font-weight: 600;
+  text-decoration: underline;
+}
 .header .top-menu .top-search::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 150px;
+  right: 110px;
   display: inline-block;
   width: 29px;
   height: 28px;
