@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import "base";
 
-.btn{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .visual {padding: 67px 0 87px;}
 .visual .visual-area{display: flex; max-width: 1720px; height: 565px;}
@@ -86,23 +80,28 @@
 .sec-01 .info-area .guide .guide-group ul .list-item a{display: flex; align-items: flex-end; border-bottom: solid 1px #000; position: relative; padding-bottom: 7px;}
 .sec-01 .info-area .guide ul .list-item a span{font-size: 20px; font-weight: 600; margin-left: 10px;}
 
-/* sec-02ee */
-.sec-02 .event{position:relative; margin-bottom: 156px;}
-.sec-02 .event .event-title{position: absolute; padding-right: 41px;}
-.sec-02 .event .event-title h2{ font-size: 50px; font-weight: 700;}
-.sec-02 .event .event-title h2 span{position: absolute; top: -6px; right: 0; font-size: 30px; font-weight:400;}
 
-.sec-02 .event .event-list{ display: grid; grid-template-columns: repeat(4,1fr);}
-.sec-02 .event .event-list .list{margin-top: -2px;}
-.sec-02 .event .event-list .list:first-child{grid-column-start: 3;}
+/* title-area */
+.title-area{padding-right: 41px;}
+.title-area h2{ font-size: 50px; font-weight: 700;}
+.title-area h2 span{font-size: 30px; font-weight:400;}
 
-.sec-02 .event .event-list .list .list-link{ position: relative; display: block; padding: 35px 36px; border-left: 2px solid #000; border-right: 0; overflow: hidden; width: 100%; height: 429px;}
-.sec-02 .event .event-list .list:nth-child(3) .list-link, .sec-02 .event .event-list .list:nth-child(7) .list-link { border-color: transparent;}
 
-.sec-02 .event .event-list .list .list-link:before{ content: ''; display: block; width: calc(100% - 16px); height: 2px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background-color: #000; z-index: 3;}
-.sec-02 .event .event-list .list .list-link:after{ content: ''; display: block; width: calc(100% - 16px); height: 2px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background-color: #000;}
+/* sec-02 */
+.sec-02 {position:relative;}
+.sec-02 .title-area{position: absolute;}
+.sec-02 .title-area h2 span{position: absolute; top: -6px; right: 0;}
+.sec-02 .event-list{ display: grid; grid-template-columns: repeat(4,1fr); margin-bottom: 156px;}
+.sec-02 .event-list .list{margin-top: -2px;}
+.sec-02 .event-list .list:first-child{grid-column-start: 3;}
 
-.sec-02 .event .event-list .list .img-box{
+.sec-02 .event-list .list .list-link{ position: relative; display: block; padding: 35px 36px; border-left: 2px solid #000; border-right: 0; overflow: hidden; width: 100%; height: 429px;}
+.sec-02 .event-list .list:nth-child(3) .list-link, .sec-02 .event-list .list:nth-child(7) .list-link { border-color: transparent;}
+
+.sec-02 .event-list .list .list-link:before{ content: ''; display: block; width: calc(100% - 16px); height: 2px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background-color: #000; z-index: 3;}
+.sec-02 .event-list .list .list-link:after{ content: ''; display: block; width: calc(100% - 16px); height: 2px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); background-color: #000; z-index: 5;}
+
+.sec-02 .event-list .list .img-box{
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -115,23 +114,23 @@
     z-index: 2;
 }
 
-.sec-02 .event .event-list .list .img-box:hover{
+.sec-02 .event-list .list .img-box:hover{
     filter: blur(0);
     opacity: 1;
 }
 
-.sec-02 .event .event-list .list .img-box img{
+.sec-02 .event-list .list .img-box img{
     height: 100%;
     object-fit: cover;
 }
 
-.sec-02 .event .event-list .list .txt-group{ 
+.sec-02 .event-list .list .txt-group{ 
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-.sec-02 .event .event-list .list .txt-group .sub-tit{ position:relative; margin-bottom: 11px; padding-left: 14px;}
-.sec-02 .event .event-list .list .txt-group .sub-tit:after{
+.sec-02 .event-list .list .txt-group .sub-tit{ position:relative; margin-bottom: 11px; padding-left: 14px;}
+.sec-02 .event-list .list .txt-group .sub-tit:after{
      content: '';
      display: block;
      position: absolute;
@@ -144,11 +143,11 @@
      background-color: #8E49DE;
 }
 
-.sec-02 .event .event-list .list .txt-group .sub-tit.conven:after{
+.sec-02 .event-list .list .txt-group .sub-tit.conven:after{
     background-color: #ED3DA6;
 }
 
-.sec-02 .event .event-list .list .txt-group .tit{
+.sec-02 .event-list .list .txt-group .tit{
     font-size: 30px;
     font-weight: 600;
     height: 90px;
@@ -157,8 +156,70 @@
     -webkit-box-orient: vertical;
     display: -webkit-box;
 }
-.sec-02 .event .event-list .list .txt-group .date{font-size: 20px; font-weight: 600; margin-top: auto;}
+.sec-02 .event-list .list .txt-group .date{font-size: 20px; font-weight: 600; margin-top: auto;}
 
+/* sec-03 */
+
+.sec-03 {position:relative; }
+.sec-03 .ticket-wrap{
+    padding: 72px 0 65px;
+    height: 868px;
+    background: url(../img/content/bg-ticketopen-min.jpg) no-repeat center/100% auto;
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+.sec-03 .title-area{position: absolute; color: #fff; z-index: 10;}
+.sec-03 .title-area h2 span{position: absolute; top: -6px; right: 0;}
+
+.sec-03 .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.sec-03 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// .sec-03 .swiper{position: absolute; bottom: 0; width: 100%; height: 357px;}
+
+// .sec-03 .swiper {
+//     height: 100%;
+//   }
+
+
+.ticket-area {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background-color: #fff;
+    z-index: 10;
+    height: 375px;
+}
+.ticket-area .ticket{display: flex; padding: 22px; background-color: #fff; width: 1143px !important;}
+.ticket-area .ticket .img-box{width: 313px;}
+.ticket-area .ticket .txt-box {
+    padding-left: 46px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ticket-area .ticket .txt-box h3{font-size: 30px; font-weight: 600; margin-top: 20px;}
+.ticket-area .ticket .txt-box ul{display: flex;}
+.ticket-area .ticket .txt-box ul li{width: 200px;}
+.ticket-area .ticket .txt-box ul .tit{display: block; font-size: 14px; font-weight: 600; margin-bottom: 15px;}
+.ticket-area .ticket .txt-box ul .info{font-size: 20px;}
+.ticket-area .ticket .txt-box ul .info em{font-size: 38px;}
 
 
 

@@ -138,15 +138,19 @@ $total: 10;
 		}
 	
 		.nav{
+			margin: 0 auto;
 			.nav-menu{
 				display: flex;
 				align-items: center;
-				margin: 0 auto;
+				
 				li{
 					+ li{
 						margin-left: 36px;
 					}
 					.btn{
+						display: inline-flex;
+    					align-items: center;
+    					justify-content: center;
 						width: 113px;
 						height: 30px;
 						border-radius: 100px;
@@ -232,12 +236,10 @@ $total: 10;
 .btn {
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.2;
-	padding: 10px 20px;
-	color: #667085;
+	padding: 19px 24px;
+	color: #000;
 	background: #fff;
-	border-radius: 8px;
+	border: 1px solid #000;
 }
 
 

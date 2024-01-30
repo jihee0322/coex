@@ -872,15 +872,20 @@ img {
   width: 96px;
   height: 34px;
 }
+.header .top-menu .nav {
+  margin: 0 auto;
+}
 .header .top-menu .nav .nav-menu {
   display: flex;
   align-items: center;
-  margin: 0 auto;
 }
 .header .top-menu .nav .nav-menu li + li {
   margin-left: 36px;
 }
 .header .top-menu .nav .nav-menu li .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 113px;
   height: 30px;
   border-radius: 100px;
@@ -935,12 +940,10 @@ img {
 .btn {
   display: inline-block;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
-  padding: 10px 20px;
-  color: #667085;
+  padding: 19px 24px;
+  color: #000;
   background: #fff;
-  border-radius: 8px;
+  border: 1px solid #000;
 }
 
 .img-wrap {
