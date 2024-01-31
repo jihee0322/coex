@@ -180,8 +180,11 @@
 .sec-03 .title-area h2 span{position: absolute; top: -6px; right: 0;}
 
 .sec-03 .swiper {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 375px;
+    background-color: #fff;
 }
 
 .sec-03 .swiper-slide img {
@@ -191,22 +194,10 @@
     object-fit: cover;
 }
 
-// .sec-03 .swiper{position: absolute; bottom: 0; width: 100%; height: 357px;}
-
-// .sec-03 .swiper {
-//     height: 100%;
-//   }
-
-
-.ticket-area {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    background-color: #fff;
-    z-index: 10;
-    height: 375px;
+.ticket-area{
+    justify-content: center;
 }
-.ticket-area .ticket{display: flex; padding: 22px; background-color: #fff; width: 1143px !important;}
+.ticket-area .ticket{display: flex; padding: 22px; background-color: #fff; flex: 1;}
 .ticket-area .ticket .img-box{width: 313px;}
 .ticket-area .ticket .txt-box {
     padding-left: 46px; 
