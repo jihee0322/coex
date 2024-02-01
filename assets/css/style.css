@@ -435,3 +435,440 @@
 .ticket-area .ticket .txt-box ul .info em {
   font-size: 38px;
 }
+
+.visual {
+  padding: 67px 0 87px;
+}
+
+.visual .visual-area {
+  display: flex;
+  max-width: 1720px;
+  height: 565px;
+}
+
+.visual .visual-area .txt-box {
+  position: relative;
+  width: calc(100% - 565px);
+}
+
+.visual .visual-area .txt-box .top-tit {
+  font-size: 27px;
+  color: #ED3DA6;
+  margin-bottom: 10px;
+}
+
+.visual .visual-area .txt-box .txt .tit {
+  overflow: hidden;
+  position: absolute;
+}
+
+.visual .visual-area .txt-box .txt .tit span {
+  display: inline-block;
+  font-size: 64px;
+  font-weight: 700;
+  /* 초기 txt 셋팅 - opacity: 0, transform: translate(x축, y축); y축 위치를 -20% 밑에서 시작 */
+  opacity: 0;
+  transform: translate(0, 100%);
+  /* transition - 변경되는 CSS 변화를 부드럽게 하기 위해 애니메이션 속도 조절 */
+  transition: transform 0.5s;
+}
+
+.visual .visual-area .txt-box .txt .desc {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.visual .visual-area .txt-box .txt.active .tit span {
+  /* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.visual .visual-area .txt-box .txt.active .desc {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.visual .visual-area .swiper-group {
+  position: relative;
+}
+
+.visual .visual-area .main-slide {
+  width: 565px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.visual .visual-area .swiper-pagination {
+  bottom: -30px;
+}
+
+.visual .visual-area .main-slide .slide01 {
+  background: url(../img/content/visual_img_01.jpg) no-repeat center/100% auto;
+}
+
+.visual .visual-area .main-slide .slide02 {
+  background: url(../img/content/visual_img_02.png) no-repeat center/100% auto;
+}
+
+.visual .visual-area .main-slide .slide03 {
+  background: url(../img/content/visual_img_03.jpg) no-repeat center/100% auto;
+}
+
+.visual .visual-area .main-slide .slide04 {
+  background: url(../img/content/visual_img_04.jpg) no-repeat center/100% auto;
+}
+
+.visual .visual-area .main-slide .slide05 {
+  background: url(../img/content/visual_img_05.png) no-repeat center/100% auto;
+}
+
+/* sec-01 */
+.sec-01 {
+  margin-bottom: 175px;
+}
+
+.sec-01 .info-area {
+  display: flex;
+}
+
+.sec-01 .info-area .info-box {
+  padding: 40px 43px;
+  position: relative;
+  width: 430px;
+  background-color: #000;
+  color: #fff;
+}
+
+.sec-01 .info-area .info-box::after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 116px;
+  height: 92px;
+  background-image: url(../img/content/ico_map.png);
+  background-size: 100% auto;
+}
+
+.sec-01 .info-area .top-txt {
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sec-01 .info-area .txt {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.sec-01 .info-area .guide {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  padding: 40px 43px;
+  width: 100%;
+}
+
+.sec-01 .info-area .guide .guide-group ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sec-01 .info-area .guide .guide-group ul .list-item {
+  padding: 0 10px;
+}
+
+.sec-01 .info-area .guide .guide-group ul .list-item a::before {
+  content: "";
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 90px;
+}
+
+.sec-01 .info-area .guide .guide-group ul .list-item.ico-parking a::before {
+  background-image: url(../img/content/ico_guide_1.svg);
+  background-size: 71px 85px;
+}
+
+.sec-01 .info-area .guide .guide-group ul .list-item.ico-directions a::before {
+  background-image: url(../img/content/ico_guide_2.svg);
+  background-size: 66px 90px;
+}
+
+.sec-01 .info-area .guide .guide-group ul .list-item.ico-amenities a::before {
+  background-image: url(../img/content/ico_guide_3.svg);
+  background-size: 92px 87px;
+}
+
+.sec-01 .info-area .guide .guide-group ul .list-item a {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: solid 1px #000;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.sec-01 .info-area .guide ul .list-item a span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* title-area */
+.title-area {
+  padding-right: 41px;
+}
+
+.title-area h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title-area h2 span {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* sec-02 */
+.sec-02 {
+  position: relative;
+}
+
+.sec-02 .title-area {
+  position: absolute;
+}
+
+.sec-02 .title-area h2 span {
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+
+.sec-02 .event-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 156px;
+}
+
+.sec-02 .event-list .list {
+  margin-top: -2px;
+}
+
+.sec-02 .event-list .list:first-child {
+  grid-column-start: 3;
+}
+
+.sec-02 .event-list .list .list-link {
+  position: relative;
+  display: block;
+  padding: 35px 36px;
+  border-left: 2px solid #000;
+  border-right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 429px;
+}
+
+.sec-02 .event-list .list:nth-child(3) .list-link, .sec-02 .event-list .list:nth-child(7) .list-link {
+  border-color: transparent;
+}
+
+.sec-02 .event-list .list .list-link:before {
+  content: "";
+  display: block;
+  width: calc(100% - 16px);
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  z-index: 3;
+}
+
+.sec-02 .event-list .list .list-link:after {
+  content: "";
+  display: block;
+  width: calc(100% - 16px);
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  z-index: 5;
+}
+
+.sec-02 .event-list .list .img-box {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(10px);
+  opacity: 0;
+  transition-duration: 0.25s;
+  z-index: 2;
+}
+
+.sec-02 .event-list .list .img-box:hover {
+  filter: blur(0);
+  opacity: 1;
+}
+
+.sec-02 .event-list .list .img-box img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec-02 .event-list .list .txt-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sec-02 .event-list .list .txt-group .sub-tit {
+  position: relative;
+  margin-bottom: 11px;
+  padding-left: 14px;
+}
+
+.sec-02 .event-list .list .txt-group .sub-tit:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #8E49DE;
+}
+
+.sec-02 .event-list .list .txt-group .sub-tit.conven:after {
+  background-color: #ED3DA6;
+}
+
+.sec-02 .event-list .list .txt-group .tit {
+  font-size: 30px;
+  font-weight: 600;
+  height: 90px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.sec-02 .event-list .list .txt-group .date {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+/* sec-03 */
+.sec-03 {
+  position: relative;
+}
+
+.sec-03 .ticket-wrap {
+  padding: 72px 0 65px;
+  height: 868px;
+  background: url(../img/content/bg-ticketopen-min.jpg) no-repeat center/100% auto;
+}
+.sec-03 .ticket-wrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sec-03 .title-area {
+  position: absolute;
+  color: #fff;
+  z-index: 10;
+}
+
+.sec-03 .title-area h2 span {
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+
+.sec-03 .swiper {
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  height: 375px;
+  background-color: #fff;
+}
+
+.sec-03 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ticket-area {
+  justify-content: center;
+}
+
+.ticket-area .ticket {
+  display: flex;
+  padding: 22px;
+  background-color: #fff;
+  flex: 1;
+}
+
+.ticket-area .ticket .img-box {
+  width: 313px;
+}
+
+.ticket-area .ticket .txt-box {
+  padding-left: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ticket-area .ticket .txt-box h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.ticket-area .ticket .txt-box ul {
+  display: flex;
+}
+
+.ticket-area .ticket .txt-box ul li {
+  width: 200px;
+}
+
+.ticket-area .ticket .txt-box ul .tit {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.ticket-area .ticket .txt-box ul .info {
+  font-size: 20px;
+}
+
+.ticket-area .ticket .txt-box ul .info em {
+  font-size: 38px;
+}
