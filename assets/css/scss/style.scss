@@ -470,8 +470,11 @@
     font-size: 18px;
     text-align: center;
 }
-
-
+.foot-menu .foot-list ul li:hover a,
+.foot-intro li:hover a,
+.foot-site ul li:hover a{
+    text-decoration: underline;
+}
 
 
 
