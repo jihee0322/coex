@@ -266,7 +266,6 @@
 .news-wrap .news-area .tab-cont .tab-list .txt:hover{text-decoration: underline;}
 
 /* sec-05 */
-
 .sec-05{
     padding: 120px 0;
     position: relative; 
@@ -316,7 +315,6 @@
 }
 
 .link-group .link-list li a:hover{color: #fff;}
-// .link-group .link-list li a:hover a::after{opacity: 1;}
 .link-group .link-list li a:hover::after{opacity: 1;} 
 .link-group .txt{margin-top: 142px; font-size: 70px; line-height: 1.2;}
 
@@ -330,6 +328,7 @@
 }
 
 .video-area ul li:nth-child(5){
+    grid-column: 2/3;
     left: 0;
 }
 .video-area ul li a img{position: absolute;}
@@ -337,9 +336,140 @@
 .video-area ul li:nth-child(2) a img{top: -161px;}
 
 
+/* footer */
 
+.footer{
+    position: relative;
+}
 
+.top-btn{
+    position: absolute;
+    top: -80px;
+    right: 32px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border: 2px solid #000;
+    background: url(../img/content/ico_scrollTop.svg) no-repeat center;
+    background-size: 16px 18px;
+}
 
+.foot-menu{margin-top: 130px; width: 100%; height: 385px; display: flex; justify-content: center; font-size: 18px;}
+.foot-menu .line {position: relative; padding: 26px 20px; width: 430px;}
+.foot-menu .line:first-child {padding-left: 0;}
+.foot-menu .line:last-child {padding-right: 0;}
+.foot-menu .line + .line{border-left: 1px solid #000;}
+
+.foot-menu .line::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 16px);
+    border-top: solid 1px #000;
+    margin: 0 auto;
+}
+
+.foot-menu .line::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 16px);
+    border-top: solid 1px #000;
+    margin: 0 auto;
+}
+.foot-menu .foot-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+ }
+.foot-menu .foot-info .logo{width: 119px; height: 42px;}
+.foot-menu .foot-info .address{margin-top: 30px;}
+.foot-menu .foot-info .tel{
+    display: block;
+    width: 410px;
+    font-weight: 600;
+    padding: 16px;
+    background-color: #F7F7F7;
+    text-align: center;
+    margin-top: auto;
+}
+
+.foot-menu .foot-list ul {display: grid; grid-template-columns: 1fr 1fr; height: 100%;}
+.foot-menu .foot-list ul li{width: 214px;}
+.foot-menu .foot-list ul li a{font-size: 22px;}
+
+.foot-intro{display: flex; flex-direction: column; justify-content: space-between;}
+.foot-intro .intro-list li + li{margin-top: 12px;}
+.foot-intro .sns-list{display: flex;}
+.foot-intro .sns-list li+li{margin-left: 6px;}
+.foot-intro .sns-list li::after{
+    content: '';
+    display: block;
+    width: 47px;
+    height: 47px;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+.foot-intro .sns-list .instagram::after{
+    background: url(../img/content/ico_instargram.svg) no-repeat center;
+    background-size: 18px 18px;
+}
+
+.foot-intro .sns-list .youtube::after{
+    background: url(../img/content/ico_youtube.svg) no-repeat center;
+    background-size: 22px 16px;
+}
+
+.foot-intro .sns-list .facebook::after{
+    background: url(../img/content/ico_facebook.svg) no-repeat center;
+    background-size: 10px 19px;
+}
+
+.foot-intro .sns-list .twitter::after{
+    background: url(../img/content/ico_twitter.svg) no-repeat center;
+    background-size: 19px 18px;
+}
+
+.foot-intro .sns-list .blog::after{
+    background: url(../img/content/ico_blog.svg) no-repeat center;
+    background-size: 25px 21px;
+}
+
+.foot-site{display: flex; flex-direction: column; justify-content: space-between;}
+.foot-site ul li + li{margin-top: 12px;}
+
+.foot-site .family-group a{
+    position: relative;
+    display: block;
+    width: 390px;
+    background-color: #F7F7F7;
+    padding: 20px 52px 20px 20px;
+    font-size: 18px;
+}
+
+.foot-site .family-group a::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 8px;
+    background-image: url(../img/content/ico_family_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.foot-copy{
+    padding: 32px 0 40px;
+    font-size: 18px;
+    text-align: center;
+}
 
 
 
