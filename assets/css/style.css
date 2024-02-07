@@ -381,7 +381,7 @@
   padding: 72px 0 65px;
   background: url(../img/content/bg-ticketopen-min.jpg) no-repeat center/100% auto;
 }
-.sec-03 .ticket-wrap::after {
+.sec-03 .ticket-wrap::before {
   content: "";
   display: block;
   position: absolute;
@@ -391,13 +391,19 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* [02-01] */
 .sec-03 .title-area {
+  max-width: 1720px;
+  padding-right: 0;
+  display: block;
+  margin-left: auto;
+  padding-bottom: 150px;
+}
+
+.sec-03 .title-area h2 {
   position: relative;
-  margin-bottom: 150px;
   width: fit-content;
   color: #fff;
-  z-index: 10;
+  padding-right: 41px;
 }
 
 .sec-03 .title-area h2 span {
@@ -406,16 +412,34 @@
   right: 0;
 }
 
+.ticket-swiper {
+  position: relative;
+  padding: 80px 0 48px;
+}
+
+.ticket-swiper .swiper {
+  position: initial;
+  width: 100%;
+  height: 375px;
+  background-color: #fff;
+}
+
+.ticket-swiper .ticket-area {
+  position: initial;
+}
+
 .ticket-area .ticket {
   display: flex;
   padding: 22px;
   width: 1060px;
+  background-color: #fff;
   /* flex: 1; */
 }
 
-.sec-03 .swiper {
-  width: 100%;
-  background-color: #fff;
+.ticket-swiper .swiper .swiper-pagination-bullet {
+  background: #fff;
+  width: 11px;
+  height: 11px;
 }
 
 .ticket-area .ticket .img-box {
@@ -463,6 +487,38 @@
 
 .ticket-area .ticket .txt-box ul .info em {
   font-size: 38px;
+}
+
+.swiper-btn-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  height: 51px;
+}
+
+.swiper-btn-wrap .swiper-button-prev,
+.swiper-btn-wrap .swiper-button-next {
+  position: initial;
+  width: 100%;
+  height: 100%;
+}
+.swiper-btn-wrap .swiper-button-prev::after,
+.swiper-btn-wrap .swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 71px;
+  height: 51px;
+}
+
+.swiper-btn-wrap .swiper-button-prev::after {
+  background: url(../img/content/ico_slide_prev.svg) no-repeat center/100% auto;
+  margin-right: 13px;
+}
+
+.swiper-btn-wrap .swiper-button-next::after {
+  background: url(../img/content/ico_slide_next.svg) no-repeat center/100% auto;
 }
 
 /* sec-04 */
