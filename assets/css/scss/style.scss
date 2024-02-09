@@ -58,6 +58,16 @@
 	transform: translate(0, 0);
 } 
 .visual .visual-area .txt-box .txt.active .desc{opacity: 1; display: flex; flex-direction: column;}
+.visual .visual-area .txt-box .arrow-btn{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    width: 226px;
+    height: 203px;
+    display: block;
+    background-image: url(../img/content/ico_hero_arrow.svg);
+    background-size: 226px 203px;
+}
 
 .visual .visual-area .swiper-group{position: relative;}
 .visual .visual-area .main-slide{width: 565px;  height: 100%; overflow: hidden;}
@@ -89,6 +99,7 @@
     background-repeat: no-repeat;
     width: 92px;
     height: 90px;
+    flex-shrink: 0;
     
 }
 
@@ -391,6 +402,7 @@
 .video-area {z-index: 50; margin-left: auto;}
 .video-area ul{position:relative; display: grid; grid-template-columns: 1fr 1fr; gap: 36px;}
 .video-area ul li{position: relative; width: 414px; height: 414px; overflow: hidden;}
+.video-area ul li a{display: block; width: 100%; height: 100%;}
 .video-area ul li:nth-child(1),
 .video-area ul li:nth-child(3){
     top: 130px;
@@ -400,13 +412,14 @@
     grid-column: 2/3;
     left: 0;
 }
-.video-area ul li a img{position: absolute;}
-.video-area ul li:first-child a img{top: -161px;}
-.video-area ul li:nth-child(2) a img{top: -161px;}
+.video-area ul li a img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 
 /* footer */
-
 .footer{
     position: relative;
 }

@@ -90,6 +90,17 @@
   flex-direction: column;
 }
 
+.visual .visual-area .txt-box .arrow-btn {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  width: 226px;
+  height: 203px;
+  display: block;
+  background-image: url(../img/content/ico_hero_arrow.svg);
+  background-size: 226px 203px;
+}
+
 .visual .visual-area .swiper-group {
   position: relative;
 }
@@ -188,6 +199,7 @@
   background-repeat: no-repeat;
   width: 92px;
   height: 90px;
+  flex-shrink: 0;
 }
 
 .sec-01 .info-area .guide .guide-group ul .list-item.ico-parking a::before {
@@ -712,6 +724,12 @@
   overflow: hidden;
 }
 
+.video-area ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .video-area ul li:nth-child(1),
 .video-area ul li:nth-child(3) {
   top: 130px;
@@ -724,14 +742,8 @@
 
 .video-area ul li a img {
   position: absolute;
-}
-
-.video-area ul li:first-child a img {
-  top: -161px;
-}
-
-.video-area ul li:nth-child(2) a img {
-  top: -161px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* footer */

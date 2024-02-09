@@ -935,6 +935,7 @@ img {
 .inner {
   max-width: 1720px;
   margin: 0 auto;
+  padding: 0 48px;
 }
 
 .btn {
