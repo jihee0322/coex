@@ -872,6 +872,9 @@ img {
   width: 96px;
   height: 34px;
 }
+.header .top-menu .logo a {
+  display: block;
+}
 .header .top-menu .nav {
   margin: 0 auto;
 }
@@ -935,7 +938,7 @@ img {
 .inner {
   max-width: 1720px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 36px;
 }
 
 .btn {
