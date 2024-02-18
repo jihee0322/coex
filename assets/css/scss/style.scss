@@ -8,7 +8,7 @@
     height: 22px;
     position: absolute;
     top: 50%;
-    left: 32px;
+    left: 0;
     transform: translateY(-50%);
     display: none;
 }
@@ -163,7 +163,8 @@
 .sec-01 .info-area .info-box::after {
     content: "";
     position: absolute;
-    bottom: 25px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 25px;
     width: 116px;
     height: 92px;
@@ -174,7 +175,7 @@
 .sec-01 .info-area .top-txt {
     margin-bottom: 13px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .sec-01 .info-area .txt {
@@ -235,7 +236,7 @@
 
 .sec-01 .info-area .guide ul .list-item a span {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     margin-left: 10px;
 }
 
@@ -243,6 +244,7 @@
 /* title-area */
 .title-area {
     padding-right: 41px;
+    flex-shrink: 0;
 }
 
 .title-area h2 {
@@ -380,7 +382,7 @@
 
 .sec-02 .event-list .list .txt-group .tit {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     height: 90px;
     overflow: hidden;
     -webkit-line-clamp: 2;
@@ -390,7 +392,7 @@
 
 .sec-02 .event-list .list .txt-group .date {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: auto;
 }
 
@@ -492,7 +494,7 @@
 
 .ticket-area .ticket .txt-box h3 {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 20px;
 }
 
@@ -507,7 +509,7 @@
 .ticket-area .ticket .txt-box ul .tit {
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -522,7 +524,8 @@
 .swiper-btn-wrap {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 25%;
+    transform: translateX(-25%);
     display: flex;
     align-items: flex-end;
     height: 51px;
@@ -603,7 +606,7 @@
 
 .news-wrap .news-area .news-tab li a {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: #AFAFAF
 }
 
@@ -647,7 +650,7 @@
 .news-wrap .news-area .tab-cont .tab-list .txt {
     padding-left: 57px;
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .news-wrap .news-area .tab-cont .tab-list .txt:hover {
@@ -662,7 +665,7 @@
     background: url(../img/content/media-back-min.png) no-repeat center;
     background-size: cover;
 
-    &::after {
+    &::before {
         content: '';
         display: block;
         position: absolute;
@@ -697,7 +700,7 @@
     position: relative;
     display: inline-block;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.25);
     padding-right: 35px;
 }
@@ -774,6 +777,12 @@
     transform: translateY(-50%);
 }
 
+// 승연주임님 이거 왜 이미지 커지는거 안되나요?
+// .video-area ul li a img:hover{
+//     transform: scale(1.1);
+//     transition-duration: 0.3s;
+// }
+
 
 /* footer */
 .footer {
@@ -813,6 +822,47 @@
 
 .foot-menu .line:last-child {
     padding-right: 0;
+}
+
+.foot-menu .line.other {
+    padding: 0;
+
+    &::after,
+    &::before {
+        display: none;
+    }
+
+    ul li {
+        position: relative;
+
+        &:nth-child(even) {
+            border-left: 1px solid #000;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 16px;
+            right: 16px;
+            border-top: solid 1px #000;
+        }
+
+
+        &:nth-child(n+3) ::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            right: 16px;
+            border-top: solid 1px #000;
+        }
+
+        a {
+            display: block;
+            padding: 20px 0 0 26px;
+        }
+    }
 }
 
 .foot-menu .line+.line {
@@ -859,7 +909,7 @@
 .foot-menu .foot-info .tel {
     display: block;
     width: 100%;
-    font-weight: 600;
+    font-weight: 700;
     padding: 16px;
     background-color: #F7F7F7;
     text-align: center;
@@ -1049,7 +1099,6 @@
     }
 
     .sec-01 .info-area .info-box::after {
-        bottom: 30px;
         right: 32px;
         width: 87px;
         height: 69px;
@@ -1221,10 +1270,6 @@
         margin-bottom: 32px;
     }
 
-    .news-wrap .news-area .news-tab li {
-        padding-left: 26px;
-    }
-
     .news-wrap .news-area .news-tab li a {
         font-size: 18px;
     }
@@ -1237,23 +1282,6 @@
         padding: 18px 0;
     }
 
-    .news-wrap .news-area .tab-cont ul li a {
-        padding-left: 10px;
-    }
-
-    .news-wrap .news-area .tab-cont .tab-list .list strong {
-        font-size: 33px;
-    }
-
-    .news-wrap .news-area .tab-cont .tab-list .list span {
-        font-size: 14px;
-        margin-top: 0;
-    }
-
-    .news-wrap .news-area .tab-cont .tab-list .txt {
-        padding-left: 43px;
-        font-size: 20px;
-    }
 
     /* sec-05 */
     .sec-05 {
@@ -1389,7 +1417,7 @@
 
     .header {
         .top-menu {
-            padding: 0 32px;
+            padding: 0;
 
             .logo {
                 margin: 0 auto;
@@ -1411,13 +1439,13 @@
 
             .country {
                 position: absolute;
-                right: 32px;
+                right: 0;
             }
         }
     }
 
     /* visual */
-    .visual {
+    .visual .inner {
         padding: 0;
     }
 
@@ -1475,14 +1503,361 @@
         background: url(../img/content/mo_visual_05.png) no-repeat center/100% auto;
     }
 
+    /* sec-01 */
+    .sec-01 {
+        margin-bottom: 128px;
+    }
+    
     .sec-01 .info-area {
         display: flex;
         flex-direction: column;
     }
 
-    .sec-01 .info-area .guide {
+    .sec-01 .info-area .guide,
+    .sec-01 .info-area .info-box {
         padding: 38px 32px;
-      }
+        width: 100%;
+    }
+
+    .sec-01 .info-area .info-box::after {
+        width: 116px;
+        height: 92px;
+    }
+
+    .sec-01 .info-area .top-txt {
+        margin-bottom: 13px;
+        font-size: 18px;
+    }
+
+    .sec-01 .info-area .txt {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .sec-01 .info-area .guide{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sec-01 .info-area .guide .guide-group{
+        margin-top: 38px;
+        width: 100%;
+    }
+
+    .sec-01 .info-area .guide .guide-group ul .list-item{
+        width: 33.3%;
+        padding: 0 16px;
+        &:first-child{
+            padding-left: 0;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+
+    .sec-01 .info-area .guide .guide-group ul .list-item a::before {
+        width: 71px;
+        height: 74px;
+    }
+
+    .sec-01 .info-area .guide .guide-group ul .list-item.ico-parking a::before {
+        background-size: 55px 69px;
+    }
+
+    .sec-01 .info-area .guide .guide-group ul .list-item.ico-directions a::before {
+        background-size: 50px 74px;
+    }
+
+    .sec-01 .info-area .guide .guide-group ul .list-item.ico-amenities a::before {
+        background-size: 71px 65px;
+    }
+
+    .sec-01 .info-area .guide .guide-group ul .list-item a {
+        justify-content: space-between;
+    }
+
+    .sec-01 .info-area .guide ul .list-item a span {
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+    /* sec-02 */
+    .sec-02 .event-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sec-02 .event-list .list {
+        margin-top: -2px;
+    }
+
+    .sec-02 .event-list .list .list-link {
+        padding: 30px 24px;
+        height: 237px;
+    }
+
+    .sec-02 .event-list .list .txt-group .sub-tit {
+        margin-bottom: 11px;
+    }
+
+    .sec-02 .event-list .list .txt-group .sub-tit:after {
+        width: 7px;
+        height: 7px;
+    }
+
+    .sec-02 .event-list .list .txt-group .tit {
+        font-size: 20px;
+        height: 60px;
+    }
+
+    .sec-02 .event-list .list .txt-group .date {
+        font-size: 14px;
+    }
+
+
+    /* sec-03 */
+    .sec-03 .ticket-wrap {
+        padding: 128px 0;
+    }
+
+    .sec-03 .title-area {
+        // max-width: 1290px;
+        padding: 0 32px 0;
+        margin: 0;
+    }
+
+    .sec-03 .title-area h2 {
+        padding-right: 42px;
+    }
+
+    .ticket-swiper {
+        padding: 60px 0 48px;
+    }
+
+    .ticket-swiper .swiper {
+        height: 372px;
+    }
+
+    .ticket-area .ticket {
+        padding: 26px 22px;
+        width: 877px;
+    }
+
+    .ticket-swiper .swiper .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+    }
+
+    .ticket-area .ticket .img-box {
+        width: 254px;
+        height: 100%;
+    }
+
+    .ticket-area .ticket .txt-box {
+        padding-left: 20px;
+    }
+
+    .ticket-area .ticket .txt-box .btn-area .btn {
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+
+    .ticket-area .ticket .txt-box h3 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .ticket-area .ticket .txt-box ul .tit {
+        margin-bottom: 11px;
+    }
+
+    .ticket-area .ticket .txt-box ul .info {
+        font-size: 16px;
+    }
+
+    .ticket-area .ticket .txt-box ul .info em {
+        font-size: 29px;
+    }
+
+    .swiper-btn-wrap {
+        height: 38px;
+    }
+
+    .swiper-btn-wrap .swiper-button-prev,
+    .swiper-btn-wrap .swiper-button-next {
+        &::after {
+            width: 53px;
+            height: 38px;
+        }
+    }
+
+    /* sec-04 */
+    .sec-04 {
+        padding: 124px 0 144px;
+    }
+
+    .news-wrap .news-area .news-tab {
+        margin-bottom: 24px;
+    }
+
+    .news-wrap .news-area .news-tab li a {
+        font-size: 20px;
+    }
+
+    .news-wrap .news-area .tab-cont {
+        width: 641px;
+    }
+
+    .news-wrap .news-area .tab-cont ul li {
+        padding: 24px 0;
+    }
+
+    .news-wrap .news-area .tab-cont ul li a {
+        padding-left: 10px;
+    }
+
+    .news-wrap .news-area .tab-cont .tab-list .list strong {
+        font-size: 33px;
+    }
+
+    .news-wrap .news-area .tab-cont .tab-list .list span {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .news-wrap .news-area .tab-cont .tab-list .txt {
+        padding-left: 43px;
+        font-size: 20px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    /* sec-05 */
+    .sec-05 {
+        padding: 90px 0;
+    }
+
+    .link-group {
+        position: initial;
+        margin-top: 40px;
+    }
+
+    .link-group .link-list li+li {
+        margin-top: 18px;
+    }
+
+    .link-group .link-list li a {
+        font-size: 21px;
+        padding-right: 26px;
+    }
+
+    .link-group .link-list li a::after {
+        width: 19px;
+        height: 17px;
+    }
+
+    .link-group .txt {
+        margin-top: 32px;
+        font-size: 32px;
+    }
+
+    .video-area ul {
+        gap: 32px;
+    }
+
+    .video-area ul li {
+        width: 380px;
+        height: 380px;
+    }
+
+    .video-area ul li:nth-child(1),
+    .video-area ul li:nth-child(3) {
+        top: 80px;
+    }
+
+
+    /* footer */
+    .foot-menu {
+        margin-top: 130px;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .foot-menu .line {
+        width: 50%;
+        height: 328px;
+        padding: 26px 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .foot-menu .line:nth-child(n+3)::after {
+        display: none;
+    }
+
+    .foot-menu .line:nth-child(3) {
+        border-left: 0;
+    }
+
+    .foot-menu .foot-info .logo {
+        width: 119px;
+        height: 42px;
+    }
+
+    .foot-menu .foot-info .tel {
+        padding: 14 16px;
+        font-size: 16px;
+    }
+
+    .foot-menu .foot-list ul li a {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .foot-intro .sns-list li::after {
+        width: 47px;
+        height: 47px;
+    }
+
+    .foot-intro .sns-list .instagram::after {
+        background-size: 18px 18px;
+    }
+
+    .foot-intro .sns-list .youtube::after {
+        background-size: 22px 16px;
+    }
+
+    .foot-intro .sns-list .facebook::after {
+        background-size: 10px 19px;
+    }
+
+    .foot-intro .sns-list .twitter::after {
+        background-size: 19px 18px;
+    }
+
+    .foot-intro .sns-list .blog::after {
+        background-size: 25px 21px;
+    }
+
+    .foot-site ul li+li {
+        margin-top: 12px;
+    }
+
+    .foot-site .family-group a {
+        padding: 20px 52px 20px 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .foot-site .family-group a::after {
+        right: 15px;
+    }
+
+    .foot-copy {
+        padding: 24px 0 30px;
+        font-size: 14px;
+    }
 
 }
 

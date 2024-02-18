@@ -123,7 +123,13 @@ $total: 10;
 
 /* header */
 .header {
-	background-color: #000;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1000;
+	
 	.top-menu{
 		position: relative;
 		display: flex;
@@ -146,7 +152,7 @@ $total: 10;
 				
 				li{
 					+ li{
-						margin-left: 36px;
+						margin-left: 34px;
 					}
 					.btn{
 						display: inline-flex;
@@ -157,9 +163,11 @@ $total: 10;
 						border-radius: 100px;
 						background-color: #F147AC;
 						color: #fff;
+						padding: 0;
 					}
 					a{
-						font-weight: 600;
+						font-weight: 900;
+						letter-spacing: -0.7px;
 						&:hover{
 							text-decoration: underline;
 						}
@@ -230,9 +238,9 @@ $total: 10;
 }
 
 .inner {
-	max-width: 1720px;
-	margin: 0 auto;
-	padding: 0 36px;
+	max-width: 1815px;
+    margin: 0 auto;
+    padding: 0 48px;
 }
 
 .btn {
