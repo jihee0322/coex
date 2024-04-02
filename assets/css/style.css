@@ -35,6 +35,7 @@
 
 /* visual */
 .visual {
+  margin-top: 66px;
   padding: 67px 0 87px;
 }
 
@@ -54,20 +55,12 @@
   margin-bottom: 10px;
 }
 
-.visual .visual-area .txt-box .txt .tit {
-  overflow: hidden;
-  position: absolute;
-}
-
 .visual .visual-area .txt-box .txt .tit span {
   display: inline-block;
   font-size: 64px;
   font-weight: 700;
   /* 초기 txt 셋팅 - opacity: 0, transform: translate(x축, y축); y축 위치를 -20% 밑에서 시작 */
-  opacity: 0;
-  transform: translate(0, 100%);
   /* transition - 변경되는 CSS 변화를 부드럽게 하기 위해 애니메이션 속도 조절 */
-  transition: transform 0.5s;
 }
 
 .visual .visual-area .txt-box .txt .desc {
@@ -77,10 +70,29 @@
   font-size: 26px;
 }
 
+.visual .visual-area .txt-box .txt .desc span {
+  display: block;
+}
+
+.visual .visual-area .txt-box .txt {
+  display: none;
+  overflow: hidden;
+}
+
+.visual .visual-area .txt-box .txt.active {
+  display: block;
+}
+
+.visual .visual-area .txt-box .txt .tit {
+  transform: translate(0, 100%);
+}
+
+.visual .visual-area .txt-box .txt.active .tit {
+  transform: translate(0, 0);
+}
+
 .visual .visual-area .txt-box .txt.active .tit span {
   /* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 .visual .visual-area .txt-box .txt.active .desc {
@@ -149,9 +161,9 @@
 }
 
 .sec-01 .info-area .info-box {
-  padding: 40px 43px;
   position: relative;
   width: 430px;
+  padding: 40px 43px;
   background-color: #000;
   color: #fff;
 }
@@ -159,9 +171,8 @@
 .sec-01 .info-area .info-box::after {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 25px;
+  bottom: 40px;
+  right: 43px;
   width: 116px;
   height: 92px;
   background-image: url(../img/content/ico_map.png);
@@ -181,11 +192,11 @@
 
 .sec-01 .info-area .guide {
   display: flex;
+  flex: 1;
   align-items: end;
   justify-content: space-between;
   background-color: #F8F8F8;
   padding: 40px 43px;
-  width: 100%;
 }
 
 .sec-01 .info-area .guide .guide-group ul {
@@ -655,6 +666,7 @@
   color: #fff;
   background: url(../img/content/media-back-min.png) no-repeat center;
   background-size: cover;
+  z-index: 1;
 }
 .sec-05::before {
   content: "";
@@ -740,7 +752,6 @@
 .video-area ul li {
   position: relative;
   width: 414px;
-  height: 414px;
   overflow: hidden;
 }
 
@@ -766,21 +777,27 @@
   transform: translateY(-50%);
 }
 
+.video-area ul li:hover a {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
 /* footer */
 .footer {
   position: relative;
 }
 
 .top-btn {
-  position: absolute;
-  top: -80px;
+  display: none;
+  position: fixed;
+  bottom: 25px;
   right: 32px;
-  display: block;
   width: 44px;
   height: 44px;
   border: 2px solid #000;
-  background: url(../img/content/ico_scrollTop.svg) no-repeat center;
+  background: rgba(255, 255, 255, 0.1) url(../img/content/ico_scrollTop.svg) no-repeat center;
   background-size: 16px 18px;
+  z-index: 10;
 }
 
 .foot-menu {
@@ -1000,7 +1017,7 @@
   text-decoration: underline;
 }
 
-/* 반응형 */
+/* 반응형 @media (max-width: 1440px) */
 @media (max-width: 1440px) {
   .inner {
     max-width: 1290px;
@@ -1052,6 +1069,9 @@
   /* sec-01 */
   .sec-01 {
     margin-bottom: 130px;
+  }
+  .sec-01 .info-area .info-box {
+    width: 330px;
   }
   .sec-01 .info-area .info-box,
   .sec-01 .info-area .guide {
@@ -1226,7 +1246,6 @@
   }
   .video-area ul li {
     width: 311px;
-    height: 311px;
   }
   .video-area ul li:nth-child(1),
   .video-area ul li:nth-child(3) {
@@ -1291,6 +1310,7 @@
     font-size: 14px;
   }
 }
+/* max-width: 1024px */
 @media (max-width: 1024px) {
   .inner {
     padding: 0 32px;
@@ -1315,50 +1335,53 @@
     right: 0;
   }
   /* visual */
+  .visual {
+    padding: 0 0 65px;
+  }
   .visual .inner {
     padding: 0;
   }
   .visual .visual-area {
     flex-direction: column-reverse;
+    position: relative;
+  }
+  .visual .visual-area .swiper-group {
+    position: static;
+    margin-bottom: 32px;
   }
   .visual .visual-area .txt-box {
-    width: calc(100% - 424px);
+    width: 100%;
+    padding-left: 32px;
   }
   .visual .visual-area .txt-box .top-tit {
     font-size: 20px;
     margin-bottom: 8px;
+  }
+  .visual .visual-area .txt-box .txt .tit br {
+    display: none;
   }
   .visual .visual-area .txt-box .txt .tit span {
     font-size: 48px;
   }
   .visual .visual-area .txt-box .txt .desc {
     font-size: 20px;
+    position: static;
+    margin-top: 80px;
   }
   .visual .visual-area .txt-box .arrow-btn {
-    right: 28px;
+    right: 0;
     bottom: 5px;
     width: 170px;
     height: 152px;
     background-size: 100%;
   }
+  .visual .visual-area .txt-box .txt.active .tit {
+    position: static;
+  }
   .visual .visual-area .main-slide {
-    width: 424px;
-    height: 424px;
-  }
-  .visual .visual-area .main-slide .slide01 {
-    background: url(../img/content/mo_visual_01.jpg) no-repeat center/100% auto;
-  }
-  .visual .visual-area .main-slide .slide02 {
-    background: url(../img/content/mo_visual_02.png) no-repeat center/100% auto;
-  }
-  .visual .visual-area .main-slide .slide03 {
-    background: url(../img/content/mo_visual_03.jpg) no-repeat center/100% auto;
-  }
-  .visual .visual-area .main-slide .slide04 {
-    background: url(../img/content/mo_visual_04.jpg) no-repeat center/100% auto;
-  }
-  .visual .visual-area .main-slide .slide05 {
-    background: url(../img/content/mo_visual_05.png) no-repeat center/100% auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   /* sec-01 */
   .sec-01 {
@@ -1433,6 +1456,19 @@
   .sec-02 .event-list .list .list-link {
     padding: 30px 24px;
     height: 237px;
+    border-left: 2px solid #000;
+  }
+  .sec-02 .event-list .list:nth-child(3) .list-link,
+  .sec-02 .event-list .list:nth-child(7) .list-link {
+    border-color: #000;
+  }
+  .sec-02 .event-list .list:nth-child(2) .list-link,
+  .sec-02 .event-list .list:nth-child(5) .list-link,
+  .sec-02 .event-list .list:nth-child(8) .list-link {
+    border-color: transparent;
+  }
+  .sec-02 .event-list .list .img-box:hover {
+    opacity: 0;
   }
   .sec-02 .event-list .list .txt-group .sub-tit {
     margin-bottom: 11px;
@@ -1498,7 +1534,7 @@
     font-size: 29px;
   }
   .swiper-btn-wrap {
-    height: 38px;
+    right: 0;
   }
   .swiper-btn-wrap .swiper-button-prev::after,
   .swiper-btn-wrap .swiper-button-next::after {
@@ -1566,8 +1602,7 @@
     gap: 32px;
   }
   .video-area ul li {
-    width: 380px;
-    height: 380px;
+    width: 260px;
   }
   .video-area ul li:nth-child(1),
   .video-area ul li:nth-child(3) {
@@ -1639,3 +1674,5 @@
     font-size: 14px;
   }
 }
+/* max-width: 960px */
+/* max-width: 720px */

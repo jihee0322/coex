@@ -113,11 +113,21 @@
                         <div class="swiper-group">
                             <div class="swiper-container main-slide">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide slide01"></div>
-                                    <div class="swiper-slide slide02"></div>
-                                    <div class="swiper-slide slide03"></div>
-                                    <div class="swiper-slide slide04"></div>
-                                    <div class="swiper-slide slide05"></div>
+                                    <div class="swiper-slide slide01">
+                                        <img src="../assets/img/content/visual_img_01.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide slide02">
+                                        <img src="../assets/img/content/visual_img_02.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide slide03">
+                                        <img src="../assets/img/content/visual_img_03.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide slide04">
+                                        <img src="../assets/img/content/visual_img_04.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide slide05">
+                                        <img src="../assets/img/content/visual_img_05.png" alt="">
+                                    </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -129,10 +139,12 @@
             <section class="sec-01">
                 <div class="inner">
                     <div class="info-area">
-                        <a href="https://business.coex.co.kr" class="info-box">
-                            <p class="top-txt">전시장 및 회의실 임대 정보</p>
-                            <p class="txt">대관안내</p>
-                        </a>
+                        <div class="info-box">
+                            <a href="https://business.coex.co.kr">
+                                <p class="top-txt">전시장 및 회의실 임대 정보</p>
+                                <p class="txt">대관안내</p>
+                            </a>
+                        </div>
                         <div class="guide">
                             <div class="guide-box">
                                 <p class="top-txt">GUIDE</p>
@@ -552,7 +564,6 @@
 
         <!-- footer -->
         <footer class="footer"> 
-            <button type="button" class="top-btn"><span class="blind">Top</span></button>
             <div class="inner">
                 <div class="foot-menu">
                     <div class="foot-info line">
@@ -611,6 +622,8 @@
             </div>
         </footer>
         <!-- //footer -->
+        <button type="button" class="top-btn"><span class="blind">Top</span></button>
+
     </div>
 
     <script>
@@ -658,7 +671,17 @@
                 $(this).addClass('active');
                 return false;
             }).filter(':eq(0)').click();
+
+            // video width = height
+            const videoli = $(".video-area ul li");
+            videoli.css('height', videoli.width())
+            $(window).resize(function() {
+                videoli.css('height', videoli.width())
             });
+
+            // scroll btn
+            const scrollBtn = $(".top-btn");
+        });
        
     </script>
 
