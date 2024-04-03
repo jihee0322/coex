@@ -58,11 +58,11 @@
 	margin-bottom: 10px;
 }
 
-.visual .visual-area .txt-box .txt {
-	// overflow: hidden;
-	// position: absolute;
-	// display: none;
-}
+// .visual .visual-area .txt-box .txt {
+// 	// overflow: hidden;
+// 	// position: absolute;
+// 	// display: none;
+// }
 
 .visual .visual-area .txt-box .txt .tit span {
 	display: inline-block;
@@ -108,11 +108,11 @@
 
 
 
-.visual .visual-area .txt-box .txt.active .tit span {
-	/* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
-	// opacity: 1;
-	// transform: translate(0, 0);
-}
+// .visual .visual-area .txt-box .txt.active .tit span {
+// 	/* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
+// 	// opacity: 1;
+// 	// transform: translate(0, 0);
+// }
 
 .visual .visual-area .txt-box .txt.active .desc {
 	opacity: 1;

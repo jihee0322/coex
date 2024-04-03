@@ -91,10 +91,6 @@
   transform: translate(0, 0);
 }
 
-.visual .visual-area .txt-box .txt.active .tit span {
-  /* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
-}
-
 .visual .visual-area .txt-box .txt.active .desc {
   opacity: 1;
   display: flex;
