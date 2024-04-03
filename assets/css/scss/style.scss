@@ -58,46 +58,41 @@
 	margin-bottom: 10px;
 }
 
-// .visual .visual-area .txt-box .txt {
-// 	// overflow: hidden;
-// 	// position: absolute;
-// 	// display: none;
-// }
+.visual .visual-area .txt-box .txt {
+	// position: relative;
+	// overflow: hidden;
+	// position: absolute;
+	// display: none;
+}
+
+.visual .visual-area .txt-box .txt .tit {
+	overflow: hidden;
+	position: absolute;
+	// transform: translate(0, 100%);
+}
 
 .visual .visual-area .txt-box .txt .tit span {
 	display: inline-block;
 	font-size: 64px;
 	font-weight: 700;
-	/* 초기 txt 셋팅 - opacity: 0, transform: translate(x축, y축); y축 위치를 -20% 밑에서 시작 */
-	// opacity: 0;
-	// transform: translate(0, 100%);
-	/* transition - 변경되는 CSS 변화를 부드럽게 하기 위해 애니메이션 속도 조절 */
-	// transition: transform 0.5s;
+	opacity: 0;
+	transform: translate(0, 100%);
+	transition: transform 0.5s;
 }
 
 .visual .visual-area .txt-box .txt .desc {
 	position: absolute;
 	bottom: 0;
-	opacity: 0;
 	font-size: 26px;
+	opacity: 0;
 }
 
 .visual .visual-area .txt-box .txt .desc span{
 	display: block;
 }
 
-.visual .visual-area .txt-box .txt {
-	display: none;
-	overflow: hidden;
-}
-
 .visual .visual-area .txt-box .txt.active {
-	display: block;
-}
-
-.visual .visual-area .txt-box .txt .tit {
-	transform: translate(0, 100%);
-
+	// display: block;
 }
 
 .visual .visual-area .txt-box .txt.active .tit{
@@ -106,18 +101,15 @@
 	transform: translate(0, 0);
 }
 
-
-
-// .visual .visual-area .txt-box .txt.active .tit span {
-// 	/* active 클래스가 붙으면 opacity, transform 위치 기본으로 돌리기 */
-// 	// opacity: 1;
-// 	// transform: translate(0, 0);
-// }
+.visual .visual-area .txt-box .txt.active .tit span {
+	opacity: 1;
+	transform: translate(0, 0);
+}
 
 .visual .visual-area .txt-box .txt.active .desc {
-	opacity: 1;
 	display: flex;
 	flex-direction: column;
+	opacity: 1;
 }
 
 .visual .visual-area .txt-box .arrow-btn {
@@ -1495,8 +1487,9 @@
 	}
 	
 	.visual .visual-area .txt-box {
-		width: 100%;
 		padding-left: 32px;
+		width: 100%;
+		height: 220px;
 	}
 
 	.visual .visual-area .txt-box .top-tit {
@@ -1508,15 +1501,15 @@
 		display: none;
 	}
 
-
 	.visual .visual-area .txt-box .txt .tit span {
 		font-size: 48px;
+		display: -webkit-box;
+   		-webkit-line-clamp: 2;
+   		-webkit-box-orient: vertical
 	}
 
 	.visual .visual-area .txt-box .txt .desc {
 		font-size: 20px;
-		position: static;
-		margin-top: 80px;
 	}
 
 	.visual .visual-area .txt-box .arrow-btn {
@@ -1525,10 +1518,6 @@
 		width: 176px;
 		height: 128px;
 		background-size: 176px 128px;
-	}
-
-	.visual .visual-area .txt-box .txt.active .tit{
-		position: static;
 	}
 
 	.visual .visual-area .main-slide {
