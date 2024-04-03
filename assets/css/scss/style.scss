@@ -225,7 +225,7 @@
 }
 
 .sec-01 .info-area .guide .guide-group ul .list-item {
-	padding: 0 10px;
+	padding: 0 16px;
 }
 
 .sec-01 .info-area .guide .guide-group ul .list-item a::before {
@@ -1464,7 +1464,7 @@
 
 			.top-search {
 				&::before {
-					right: 145px;
+					right: 115px;
 				}
 			}
 
@@ -1520,11 +1520,11 @@
 	}
 
 	.visual .visual-area .txt-box .arrow-btn {
-		right: 0;
+		right: -20px;
 		bottom: 5px;
-		width: 170px;
-		height: 152px;
-		background-size: 100%;
+		width: 176px;
+		height: 128px;
+		background-size: 176px 128px;
 	}
 
 	.visual .visual-area .txt-box .txt.active .tit{

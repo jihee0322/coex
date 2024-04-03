@@ -105,19 +105,20 @@ $total: 10;
 		r:right,
 		l: left
 	);
-$total: 10;
 
-@each $abbr, $pos in $position {
-	@for $i from 0 to $total {
-		.m#{$abbr}-#{$i} {
-			margin-#{$pos}: $i*1.39vw !important;
-		}
+	$total: 10;
 
-		.p#{$abbr}-#{$i} {
-			padding-#{$pos}: $i*1.39vw !important;
+	@each $abbr, $pos in $position {
+		@for $i from 0 to $total {
+			.m#{$abbr}-#{$i} {
+				margin-#{$pos}: $i*1.39vw !important;
+			}
+
+			.p#{$abbr}-#{$i} {
+				padding-#{$pos}: $i*1.39vw !important;
+			}
 		}
 	}
-}
 }
 
 
@@ -164,6 +165,17 @@ $total: 10;
 						background-color: #F147AC;
 						color: #fff;
 						padding: 0;
+						span{
+							letter-spacing: 0;
+							&::after{
+								content: '';
+								display: inline-block;
+								width: 14px;
+								height: 14px;
+								background: url(../img/content/ico_head_blank_w.svg) no-repeat center/100% auto;
+								margin-left: 7px;
+							}
+						}
 					}
 					a{
 						font-weight: 900;

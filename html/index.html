@@ -44,7 +44,7 @@
                             <li><a href="#">행사</a></li>
                             <li><a href="#">가이드</a></li>
                             <li><a href="#">하이라이트</a></li>
-                            <li><a href="#" class="btn">Business</a></li>
+                            <li><a href="#" class="btn"><span>Business</span></a></li>
                         </ul>
                     </nav>
                     <button type="button" class="mo-menu">
@@ -661,9 +661,9 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-         });
+        });
 
-         $(function(){
+        $(function () {
             $('.tab-cont > div').hide();
             $('.news-tab a').click(function () {
                 $('.tab-cont > div').hide().filter(this.hash).fadeIn();
@@ -675,14 +675,10 @@
             // video width = height
             const videoli = $(".video-area ul li");
             videoli.css('height', videoli.width())
-            $(window).resize(function() {
+            $(window).resize(function () {
                 videoli.css('height', videoli.width())
             });
-
-            // scroll btn
-            const scrollBtn = $(".top-btn");
         });
-       
     </script>
 
 </body>

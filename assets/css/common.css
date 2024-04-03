@@ -901,6 +901,17 @@ img {
   color: #fff;
   padding: 0;
 }
+.header .top-menu .nav .nav-menu li .btn span {
+  letter-spacing: 0;
+}
+.header .top-menu .nav .nav-menu li .btn span::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../img/content/ico_head_blank_w.svg) no-repeat center/100% auto;
+  margin-left: 7px;
+}
 .header .top-menu .nav .nav-menu li a {
   font-weight: 900;
   letter-spacing: -0.7px;
