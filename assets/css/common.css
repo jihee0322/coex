@@ -942,7 +942,7 @@ img {
   display: inline-block;
   width: 29px;
   height: 28px;
-  background: url(../img/content/ico_search.svg) no-repeat;
+  background: url(../img/content/ico_search.svg) no-repeat center/100% 100%;
 }
 
 /* footer */
