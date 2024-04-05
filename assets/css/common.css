@@ -875,7 +875,7 @@ img {
 }
 .header .top-menu .logo {
   width: 96px;
-  height: 34px;
+  height: auto;
 }
 .header .top-menu .logo a {
   display: block;

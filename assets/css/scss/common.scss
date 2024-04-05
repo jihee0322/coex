@@ -141,8 +141,10 @@ $total: 10;
 
 		.logo{
 			width: 96px;
-			height: 34px;
-			a{ display: block;}
+			height: auto;
+			a{ 
+				display: block;
+			}
 		}
 	
 		.nav{
