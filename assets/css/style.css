@@ -435,23 +435,23 @@
   right: 0;
 }
 
-.ticket-swiper {
+.sec-03 .ticket-swiper {
   position: relative;
   padding: 80px 0 48px;
 }
 
-.ticket-swiper .swiper {
+.sec-03 .ticket-swiper .swiper {
   position: initial;
   width: 100%;
   height: 375px;
   background-color: #fff;
 }
 
-.ticket-swiper .ticket-area {
+.sec-03 .ticket-swiper .ticket-area {
   position: initial;
 }
 
-.ticket-area .ticket {
+.sec-03 .ticket-area .ticket {
   display: flex;
   padding: 22px;
   width: 1060px;
@@ -463,25 +463,25 @@
   background-size: 128px auto;
 }
 
-.ticket-swiper .swiper .swiper-pagination-bullet {
+.sec-03 .ticket-swiper .swiper .swiper-pagination-bullet {
   background: #fff;
   width: 11px;
   height: 11px;
 }
 
-.ticket-area .ticket .img-box {
+.sec-03 .ticket-area .ticket .img-box {
   width: 313px;
   height: 313px;
   flex-shrink: 0;
 }
 
-.ticket-area .ticket .img-box img {
+.sec-03 .ticket-area .ticket .img-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.ticket-area .ticket .txt-box {
+.sec-03 .ticket-area .ticket .txt-box {
   padding-left: 46px;
   width: 100%;
   display: flex;
@@ -489,32 +489,32 @@
   justify-content: space-between;
 }
 
-.ticket-area .ticket .txt-box h3 {
+.sec-03 .ticket-area .ticket .txt-box h3 {
   font-size: 30px;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.ticket-area .ticket .txt-box ul {
+.sec-03 .ticket-area .ticket .txt-box ul {
   display: flex;
 }
 
-.ticket-area .ticket .txt-box ul li {
+.sec-03 .ticket-area .ticket .txt-box ul li {
   width: 33.3%;
 }
 
-.ticket-area .ticket .txt-box ul .tit {
+.sec-03 .ticket-area .ticket .txt-box ul .tit {
   display: block;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.ticket-area .ticket .txt-box ul .info {
+.sec-03 .ticket-area .ticket .txt-box ul .info {
   font-size: 20px;
 }
 
-.ticket-area .ticket .txt-box ul .info em {
+.sec-03 .ticket-area .ticket .txt-box ul .info em {
   font-size: 38px;
 }
 
@@ -556,11 +556,11 @@
   padding: 124px 0 144px;
 }
 
-.news-wrap {
+.sec-04 .news-wrap {
   display: flex;
 }
 
-.news-wrap .title-area .btn-more {
+.sec-04 .news-wrap .title-area .btn-more {
   position: relative;
   display: inline-block;
   margin-top: 29px;
@@ -569,7 +569,7 @@
   padding-right: 25px;
 }
 
-.news-wrap .title-area .btn-more::after {
+.sec-04 .news-wrap .title-area .btn-more::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -583,73 +583,73 @@
   background-size: 100% auto;
 }
 
-.news-wrap .news-area {
+.sec-04 .news-wrap .news-area {
   margin-left: auto;
 }
 
-.news-wrap .news-area .news-tab {
+.sec-04 .news-wrap .news-area .news-tab {
   display: flex;
   margin-bottom: 32px;
 }
 
-.news-wrap .news-area .news-tab li {
+.sec-04 .news-wrap .news-area .news-tab li {
   padding-left: 26px;
 }
 
-.news-wrap .news-area .news-tab li:first-child {
+.sec-04 .news-wrap .news-area .news-tab li:first-child {
   padding-left: 0;
 }
 
-.news-wrap .news-area .news-tab li a {
+.sec-04 .news-wrap .news-area .news-tab li a {
   font-size: 24px;
   font-weight: 700;
   color: #AFAFAF;
 }
 
-.news-wrap .news-area .news-tab li a.active {
+.sec-04 .news-wrap .news-area .news-tab li a.active {
   color: #000;
 }
 
-.news-wrap .news-area .tab-cont {
+.sec-04 .news-wrap .news-area .tab-cont {
   border-top: 3px solid #000;
   width: 1150px;
 }
 
-.news-wrap .news-area .tab-cont ul li {
+.sec-04 .news-wrap .news-area .tab-cont ul li {
   padding: 24px 0;
   border-bottom: 1px solid #000;
 }
 
-.news-wrap .news-area .tab-cont ul li a {
+.sec-04 .news-wrap .news-area .tab-cont ul li a {
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
 
-.news-wrap .news-area .tab-cont .tab-list .list {
+.sec-04 .news-wrap .news-area .tab-cont .tab-list .list {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.news-wrap .news-area .tab-cont .tab-list .list strong {
+.sec-04 .news-wrap .news-area .tab-cont .tab-list .list strong {
   display: block;
   font-size: 44px;
   line-height: 1.2;
 }
 
-.news-wrap .news-area .tab-cont .tab-list .list span {
+.sec-04 .news-wrap .news-area .tab-cont .tab-list .list span {
   font-size: 15px;
   margin-top: 5px;
 }
 
-.news-wrap .news-area .tab-cont .tab-list .txt {
+.sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
   padding-left: 57px;
   font-size: 26px;
   font-weight: 700;
 }
 
-.news-wrap .news-area .tab-cont .tab-list .txt:hover {
+.sec-04 .news-wrap .news-area .tab-cont .tab-list .txt:hover {
   text-decoration: underline;
 }
 
@@ -672,27 +672,27 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.media-wrap {
+.sec-05 .media-wrap {
   display: flex;
 }
 
-.media-wrap .title-area {
+.sec-05 .media-wrap .title-area {
   display: flex;
   flex-direction: column;
   color: #fff;
   z-index: 11;
 }
 
-.link-group {
+.sec-05 .link-group {
   position: absolute;
   bottom: 120px;
 }
 
-.link-group .link-list li + li {
+.sec-05 .link-group .link-list li + li {
   margin-top: 24px;
 }
 
-.link-group .link-list li a {
+.sec-05 .link-group .link-list li a {
   position: relative;
   display: inline-block;
   font-size: 28px;
@@ -701,7 +701,7 @@
   padding-right: 35px;
 }
 
-.link-group .link-list li a::after {
+.sec-05 .link-group .link-list li a::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -717,15 +717,15 @@
   opacity: 0;
 }
 
-.link-group .link-list li a:hover {
+.sec-05 .link-group .link-list li a:hover {
   color: #fff;
 }
 
-.link-group .link-list li a:hover::after {
+.sec-05 .link-group .link-list li a:hover::after {
   opacity: 1;
 }
 
-.link-group .txt {
+.sec-05 .link-group .txt {
   margin-top: 142px;
   font-size: 70px;
   line-height: 1.2;
@@ -1023,7 +1023,6 @@
   }
   .title-area h2 {
     font-size: 38px;
-    letter-spacing: -3px;
   }
   .title-area h2 span {
     font-size: 23px;
@@ -1139,42 +1138,42 @@
   .sec-03 .title-area h2 {
     padding-right: 31px;
   }
-  .ticket-swiper {
+  .sec-03 .ticket-swiper {
     padding: 60px 0 36px;
   }
-  .ticket-swiper .swiper {
+  .sec-03 .ticket-swiper .swiper {
     height: 268px;
   }
-  .ticket-area .ticket {
+  .sec-03 .ticket-area .ticket {
     padding: 17px;
     width: 857px;
   }
-  .ticket-swiper .swiper .swiper-pagination-bullet {
+  .sec-03 .ticket-swiper .swiper .swiper-pagination-bullet {
     width: 8.25px;
     height: 8.25px;
   }
-  .ticket-area .ticket .img-box {
+  .sec-03 .ticket-area .ticket .img-box {
     width: 235px;
     height: 235px;
   }
-  .ticket-area .ticket .txt-box {
+  .sec-03 .ticket-area .ticket .txt-box {
     padding-left: 35px;
   }
-  .ticket-area .ticket .txt-box .btn-area .btn {
+  .sec-03 .ticket-area .ticket .txt-box .btn-area .btn {
     padding: 14px 18px;
     font-size: 14px;
   }
-  .ticket-area .ticket .txt-box h3 {
+  .sec-03 .ticket-area .ticket .txt-box h3 {
     font-size: 23px;
     margin-top: 15px;
   }
-  .ticket-area .ticket .txt-box ul .tit {
+  .sec-03 .ticket-area .ticket .txt-box ul .tit {
     margin-bottom: 11px;
   }
-  .ticket-area .ticket .txt-box ul .info {
+  .sec-03 .ticket-area .ticket .txt-box ul .info {
     font-size: 16px;
   }
-  .ticket-area .ticket .txt-box ul .info em {
+  .sec-03 .ticket-area .ticket .txt-box ul .info em {
     font-size: 29px;
   }
   .swiper-btn-wrap {
@@ -1189,46 +1188,46 @@
   .sec-04 {
     padding: 93px 0 108px;
   }
-  .news-wrap .title-area .btn-more {
+  .sec-04 .news-wrap .title-area .btn-more {
     margin-top: 29px;
     font-size: 18px;
     padding-right: 25px;
   }
-  .news-wrap .title-area .btn-more::after {
+  .sec-04 .news-wrap .title-area .btn-more::after {
     width: 18px;
     height: 17px;
   }
-  .news-wrap .news-area .news-tab {
+  .sec-04 .news-wrap .news-area .news-tab {
     margin-bottom: 32px;
   }
-  .news-wrap .news-area .news-tab li a {
+  .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 18px;
   }
-  .news-wrap .news-area .tab-cont {
+  .sec-04 .news-wrap .news-area .tab-cont {
     width: 861px;
   }
-  .news-wrap .news-area .tab-cont ul li {
+  .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 18px 0;
   }
   /* sec-05 */
   .sec-05 {
     padding: 90px 0;
   }
-  .link-group {
+  .sec-05 .link-group {
     bottom: 90px;
   }
-  .link-group .link-list li + li {
+  .sec-05 .link-group .link-list li + li {
     margin-top: 18px;
   }
-  .link-group .link-list li a {
+  .sec-05 .link-group .link-list li a {
     font-size: 21px;
     padding-right: 26px;
   }
-  .link-group .link-list li a::after {
+  .sec-05 .link-group .link-list li a::after {
     width: 19px;
     height: 17px;
   }
-  .link-group .txt {
+  .sec-05 .link-group .txt {
     margin-top: 107px;
     font-size: 53px;
   }
@@ -1490,39 +1489,39 @@
   .sec-03 .title-area h2 {
     padding-right: 42px;
   }
-  .ticket-swiper {
+  .sec-03 .ticket-swiper {
     padding: 60px 0 48px;
   }
-  .ticket-swiper .swiper {
+  .sec-03 .ticket-swiper .swiper {
     height: 372px;
   }
-  .ticket-area .ticket {
+  .sec-03 .ticket-area .ticket {
     padding: 26px 22px;
     width: 877px;
   }
-  .ticket-swiper .swiper .swiper-pagination-bullet {
+  .sec-03 .ticket-swiper .swiper .swiper-pagination-bullet {
     width: 11px;
     height: 11px;
   }
-  .ticket-area .ticket .img-box {
+  .sec-03 .ticket-area .ticket .img-box {
     width: 254px;
     height: 100%;
   }
-  .ticket-area .ticket .txt-box {
+  .sec-03 .ticket-area .ticket .txt-box {
     padding-left: 20px;
   }
-  .ticket-area .ticket .txt-box .btn-area .btn {
+  .sec-03 .ticket-area .ticket .txt-box .btn-area .btn {
     padding: 14px 18px;
     font-size: 14px;
   }
-  .ticket-area .ticket .txt-box h3 {
+  .sec-03 .ticket-area .ticket .txt-box h3 {
     font-size: 24px;
     margin-top: 20px;
   }
-  .ticket-area .ticket .txt-box ul .tit {
+  .sec-03 .ticket-area .ticket .txt-box ul .tit {
     margin-bottom: 11px;
   }
-  .ticket-area .ticket .txt-box ul .info em {
+  .sec-03 .ticket-area .ticket .txt-box ul .info em {
     font-size: 29px;
   }
   .swiper-btn-wrap {
@@ -1537,29 +1536,29 @@
   .sec-04 {
     padding: 124px 0 144px;
   }
-  .news-wrap .news-area .news-tab {
+  .sec-04 .news-wrap .news-area .news-tab {
     margin-bottom: 24px;
   }
-  .news-wrap .news-area .news-tab li a {
+  .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 20px;
   }
-  .news-wrap .news-area .tab-cont {
+  .sec-04 .news-wrap .news-area .tab-cont {
     width: 641px;
   }
-  .news-wrap .news-area .tab-cont ul li {
+  .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 24px 0;
   }
-  .news-wrap .news-area .tab-cont ul li a {
+  .sec-04 .news-wrap .news-area .tab-cont ul li a {
     padding-left: 10px;
   }
-  .news-wrap .news-area .tab-cont .tab-list .list strong {
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .list strong {
     font-size: 33px;
   }
-  .news-wrap .news-area .tab-cont .tab-list .list span {
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .list span {
     font-size: 14px;
     margin-top: 0;
   }
-  .news-wrap .news-area .tab-cont .tab-list .txt {
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
     padding-left: 43px;
     font-size: 20px;
     display: inline-block;
@@ -1571,22 +1570,22 @@
   .sec-05 {
     padding: 90px 0;
   }
-  .link-group {
+  .sec-05 .link-group {
     position: initial;
     margin-top: 40px;
   }
-  .link-group .link-list li + li {
+  .sec-05 .link-group .link-list li + li {
     margin-top: 18px;
   }
-  .link-group .link-list li a {
+  .sec-05 .link-group .link-list li a {
     font-size: 21px;
     padding-right: 26px;
   }
-  .link-group .link-list li a::after {
+  .sec-05 .link-group .link-list li a::after {
     width: 19px;
     height: 17px;
   }
-  .link-group .txt {
+  .sec-05 .link-group .txt {
     margin-top: 32px;
     font-size: 32px;
   }
@@ -1595,10 +1594,6 @@
   }
   .video-area ul li {
     width: 260px;
-  }
-  .video-area ul li:nth-child(1),
-  .video-area ul li:nth-child(3) {
-    top: 80px;
   }
   /* footer */
   .foot-menu {
@@ -1627,7 +1622,7 @@
     height: 42px;
   }
   .foot-menu .foot-info .tel {
-    padding: 14 16px;
+    padding: 14px 16px;
     font-size: 16px;
   }
   .foot-menu .foot-list ul li a {
@@ -1660,9 +1655,6 @@
     padding: 20px 52px 20px 20px;
     font-size: 18px;
     font-weight: 500;
-  }
-  .foot-site .family-group a::after {
-    right: 15px;
   }
   .foot-copy {
     padding: 32px 0 40px;
@@ -1833,54 +1825,57 @@
   .sec-03 .title-area h2 {
     padding-right: 26px;
   }
-  .ticket-swiper {
+  .sec-03 .ticket-swiper {
     padding: 55px 0 45px;
   }
-  .ticket-swiper .swiper {
+  .sec-03 .ticket-swiper .swiper {
     height: auto;
   }
-  .ticket-area .ticket {
+  .sec-03 .ticket-area .ticket {
     padding: 36px 15px;
-    display: block;
+    flex-direction: column;
+    align-items: center;
     width: 391px;
+    background-position: bottom 35px right 15px;
+    background-size: 60px auto;
   }
-  .ticket-swiper .swiper .swiper-pagination-bullet {
+  .sec-03 .ticket-swiper .swiper .swiper-pagination-bullet {
     width: 11px;
     height: 11px;
   }
-  .ticket-area .ticket .img-box {
+  .sec-03 .ticket-area .ticket .img-box {
     width: 361px;
   }
-  .ticket-area .ticket .txt-box {
+  .sec-03 .ticket-area .ticket .txt-box {
     padding: 0 0 30px;
   }
-  .ticket-area .ticket .txt-box .btn-area {
+  .sec-03 .ticket-area .ticket .txt-box .btn-area {
     display: flex;
     margin-top: 30px;
   }
-  .ticket-area .ticket .txt-box .btn-area .btn {
+  .sec-03 .ticket-area .ticket .txt-box .btn-area .btn {
     padding: 13px 23px;
   }
-  .ticket-area .ticket .txt-box .btn-area .btn:last-child {
+  .sec-03 .ticket-area .ticket .txt-box .btn-area .btn:last-child {
     border-left: none;
   }
-  .ticket-area .ticket .txt-box h3 {
+  .sec-03 .ticket-area .ticket .txt-box h3 {
     margin-top: 23px;
     font-size: 23px;
     height: 63px;
   }
-  .ticket-area .ticket .txt-box ul {
+  .sec-03 .ticket-area .ticket .txt-box ul {
     margin-top: 23px;
   }
-  .ticket-area .ticket .txt-box ul li {
+  .sec-03 .ticket-area .ticket .txt-box ul li {
     width: auto;
     padding: 11px 13px;
   }
-  .ticket-area .ticket .txt-box ul .tit {
+  .sec-03 .ticket-area .ticket .txt-box ul .tit {
     font-size: 12px;
     margin-bottom: 3px;
   }
-  .ticket-area .ticket .txt-box ul .info em {
+  .sec-03 .ticket-area .ticket .txt-box ul .info em {
     font-size: 15px;
   }
   .swiper-btn-wrap {
@@ -1893,137 +1888,197 @@
   }
   /* sec-04 */
   .sec-04 {
-    padding: 124px 0 144px;
+    padding: 53px 0 75px;
   }
-  .news-wrap .news-area .news-tab {
-    margin-bottom: 24px;
+  .sec-04 .news-wrap {
+    flex-direction: column;
   }
-  .news-wrap .news-area .news-tab li a {
-    font-size: 20px;
+  .sec-04 .news-wrap .title-area {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
   }
-  .news-wrap .news-area .tab-cont {
-    width: 641px;
+  .sec-04 .news-wrap .title-area .btn-more {
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 13px;
+    padding-right: 21px;
   }
-  .news-wrap .news-area .tab-cont ul li {
-    padding: 24px 0;
+  .sec-04 .news-wrap .title-area .btn-more::after {
+    width: 17px;
+    height: 12px;
+    background-size: 100% 100%;
   }
-  .news-wrap .news-area .tab-cont ul li a {
+  .sec-04 .news-wrap .news-area {
+    margin-left: 0;
+  }
+  .sec-04 .news-wrap .news-area .news-tab {
+    margin-bottom: 15px;
+  }
+  .sec-04 .news-wrap .news-area .news-tab li {
+    padding-left: 12px;
+  }
+  .sec-04 .news-wrap .news-area .news-tab li a {
+    font-size: 15px;
+  }
+  .sec-04 .news-wrap .news-area .tab-cont {
+    width: 100%;
+  }
+  .sec-04 .news-wrap .news-area .tab-cont ul li {
+    padding: 17px 0;
+  }
+  .sec-04 .news-wrap .news-area .tab-cont ul li a {
     padding-left: 10px;
   }
-  .news-wrap .news-area .tab-cont .tab-list .list strong {
-    font-size: 33px;
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .list strong {
+    font-size: 30px;
   }
-  .news-wrap .news-area .tab-cont .tab-list .list span {
-    font-size: 14px;
-    margin-top: 0;
-  }
-  .news-wrap .news-area .tab-cont .tab-list .txt {
-    padding-left: 43px;
-    font-size: 20px;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
+    padding-left: 20px;
+    font-size: 16px;
   }
   /* sec-05 */
   .sec-05 {
-    padding: 90px 0;
+    padding: 53px 0 128px;
   }
-  .link-group {
-    position: initial;
-    margin-top: 40px;
+  .sec-05 .media-wrap {
+    flex-direction: column;
   }
-  .link-group .link-list li + li {
-    margin-top: 18px;
+  .sec-05 .link-group {
+    margin-top: 30px;
   }
-  .link-group .link-list li a {
-    font-size: 21px;
-    padding-right: 26px;
+  .sec-05 .link-group .link-list li + li {
+    margin-top: 12px;
   }
-  .link-group .link-list li a::after {
-    width: 19px;
-    height: 17px;
+  .sec-05 .link-group .link-list li a {
+    font-size: 15px;
+    padding-right: 0;
   }
-  .link-group .txt {
-    margin-top: 32px;
-    font-size: 32px;
+  .sec-05 .link-group .link-list li a::after {
+    display: none;
+  }
+  .sec-05 .link-group .txt {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .video-area {
+    margin-left: 0;
   }
   .video-area ul {
     gap: 32px;
   }
   .video-area ul li {
-    width: 260px;
-  }
-  .video-area ul li:nth-child(1),
-  .video-area ul li:nth-child(3) {
-    top: 80px;
+    width: 314px;
   }
   /* footer */
   .foot-menu {
-    margin-top: 130px;
-    flex-wrap: wrap;
-    height: 100%;
+    margin-top: 68px;
+    padding-bottom: 215px;
+    border-bottom: 1px solid #000;
+    position: relative;
   }
   .foot-menu .line {
-    width: 50%;
-    height: 328px;
-    padding: 26px 20px;
-    font-size: 18px;
-    font-weight: 500;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+  }
+  .foot-menu .line + .line {
+    border: 0;
+  }
+  .foot-menu .line.other ul li {
+    height: 231px;
+  }
+  .foot-menu .foot-info {
+    padding: 34px 0;
+  }
+  .foot-menu .foot-info .logo {
+    width: 112px;
+    height: 39px;
+  }
+  .foot-menu .foot-info .address {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+  .foot-menu .foot-info .tel {
+    padding: 13px 23px;
+    margin-top: 15px;
+    text-align: left;
+  }
+  .foot-menu .line::after {
+    width: 100%;
+  }
+  .foot-menu .line:first-child::before {
+    border: 0;
   }
   .foot-menu .line:last-child {
     padding-right: 20px;
   }
-  .foot-menu .line:nth-child(n+3)::after {
+  .foot-menu .line:nth-child(n+3)::before {
     display: none;
   }
   .foot-menu .line:nth-child(3) {
     border-left: 0;
   }
-  .foot-menu .foot-info .logo {
-    width: 119px;
-    height: 42px;
-  }
-  .foot-menu .foot-info .tel {
-    padding: 14 16px;
-    font-size: 16px;
-  }
   .foot-menu .foot-list ul li a {
     font-size: 22px;
     font-weight: 500;
   }
+  .foot-menu .foot-intro {
+    width: 50%;
+    position: static;
+  }
+  .foot-intro .sns-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    width: 100%;
+    justify-content: center;
+  }
   .foot-intro .sns-list li::after {
-    width: 47px;
-    height: 47px;
+    width: 43px;
+    height: 43px;
   }
   .foot-intro .sns-list .instagram::after {
-    background-size: 18px 18px;
+    background-size: 17px 17px;
   }
   .foot-intro .sns-list .youtube::after {
-    background-size: 22px 16px;
+    background-size: 20px 14px;
   }
   .foot-intro .sns-list .facebook::after {
-    background-size: 10px 19px;
+    background-size: 9px 18px;
   }
   .foot-intro .sns-list .twitter::after {
-    background-size: 19px 18px;
+    background-size: 18px 17px;
   }
   .foot-intro .sns-list .blog::after {
-    background-size: 25px 21px;
+    background-size: 23px 19px;
+  }
+  .foot-menu .foot-site {
+    width: 50%;
+    border-left: 1px solid #000;
+    position: static;
+  }
+  .foot-menu .foot-site .family-group {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+    width: 100%;
+    z-index: 10;
   }
   .foot-site ul li + li {
     margin-top: 12px;
   }
   .foot-site .family-group a {
-    padding: 20px 52px 20px 20px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 19px 49px 19px 19px;
+    font-size: 17px;
   }
   .foot-site .family-group a::after {
-    right: 15px;
+    right: 20px;
   }
   .foot-copy {
-    padding: 32px 0 40px;
-    font-size: 18px;
+    padding: 30px 0 38px;
+    font-size: 13px;
   }
 }
