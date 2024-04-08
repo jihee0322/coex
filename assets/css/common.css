@@ -259,7 +259,7 @@ img {
   display: block;
 }
 
-.mo-only {
+.sec-02 .event-list.mo-only {
   display: none;
 }
 
@@ -614,7 +614,7 @@ img {
   .mo-only {
     display: block;
   }
-  
+
   /* space */
   .mt-0 {
     margin-top: 0vw !important;
@@ -955,7 +955,7 @@ img {
 }
 
 .inner {
-  max-width: 1815px;
+  max-width: 1816px;
   margin: 0 auto;
   padding: 0 48px;
 }

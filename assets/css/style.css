@@ -41,7 +41,6 @@
 
 .visual .visual-area {
   display: flex;
-  max-width: 1720px;
 }
 
 .visual .visual-area .txt-box {
@@ -263,6 +262,7 @@
 
 .sec-02 .title-area {
   position: absolute;
+  padding-right: 31px;
 }
 
 .sec-02 .title-area h2 span {
@@ -415,7 +415,7 @@
 }
 
 .sec-03 .title-area {
-  max-width: 1720px;
+  max-width: 1816px;
   padding-right: 0;
   display: block;
   margin-left: auto;
@@ -479,6 +479,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left;
 }
 
 .sec-03 .ticket-area .ticket .txt-box {
@@ -560,6 +561,11 @@
   display: flex;
 }
 
+.sec-04 .news-wrap .title-area{
+  width: 33.3%;
+  flex-shrink: 0;
+}
+
 .sec-04 .news-wrap .title-area .btn-more {
   position: relative;
   display: inline-block;
@@ -581,10 +587,6 @@
   height: 17px;
   background-image: url(../img/content/ico_more_arrow_b.svg);
   background-size: 100% auto;
-}
-
-.sec-04 .news-wrap .news-area {
-  margin-left: auto;
 }
 
 .sec-04 .news-wrap .news-area .news-tab {
@@ -612,7 +614,7 @@
 
 .sec-04 .news-wrap .news-area .tab-cont {
   border-top: 3px solid #000;
-  width: 1150px;
+  width: 100%;
 }
 
 .sec-04 .news-wrap .news-area .tab-cont ul li {
@@ -1014,8 +1016,8 @@
 /* 반응형 @media (max-width: 1440px) */
 @media (max-width: 1440px) {
   .inner {
-    max-width: 1290px;
-    padding: 0;
+    max-width: 1362px;
+    padding: 0 36px;
   }
   /* title-area */
   .title-area {
@@ -1477,7 +1479,7 @@
     height: 372px;
   }
   .sec-03 .ticket-area .ticket {
-    padding: 26px 22px;
+    padding: 22px 26px;
     width: 877px;
   }
   .sec-03 .ticket-swiper .swiper .swiper-pagination-bullet {
@@ -1523,9 +1525,7 @@
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 20px;
   }
-  .sec-04 .news-wrap .news-area .tab-cont {
-    width: 641px;
-  }
+
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 24px 0;
   }
@@ -1759,7 +1759,7 @@
 
   .sec-02 .title-area{
     position: initial;
-    margin-bottom: 23px;
+    margin-bottom: 3.19vw;
     padding: 0 4.17vw;
   }
 
@@ -1777,7 +1777,7 @@
 
   .sec-02 .event-list.mo-only {
     display: block;
-    margin-bottom: 75px;
+    margin-bottom: 10.42vw;
   }
 
   .sec-02 .event-list.mo-only .swiper-container{
@@ -1813,12 +1813,12 @@
   }
 
   .sec-02 .event-list .list .txt-group {
-    padding: 20px 30px 38px;
+    padding: 2.78vw 4.17vw 5.28vw;
   }
 
   .sec-02 .event-list .list .txt-group .sub-tit {
-    margin-bottom: 4px;
-    font-size: 13px;
+    margin-bottom: 0.56vw;
+    font-size: 1.81vw;
   }
   .sec-02 .event-list .list .txt-group .sub-tit:after {
     width: 0.97vw;
@@ -1832,9 +1832,9 @@
     font-size: 1.94vw;
   }
 
-  .sec-02 .swiper-container{
+  .sec-02 .event-swiper{
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 5.56vw;
   }
 
   .sec-02 .swiper-pagination{
@@ -1847,6 +1847,16 @@
     text-align: center;
     line-height: 0;
   }
+
+  .sec-02 .swiper-pagination .swiper-pagination-bullet {
+    width: 1.39vw;
+    height: 1.39vw;
+    margin: 0 0.56vw;
+}
+
+  .sec-02 .swiper-pagination .swiper-pagination-bullet-active {
+    background: #000;
+}
 
   /* sec-03 */
   .sec-03 .ticket-wrap {
@@ -1955,9 +1965,7 @@
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 2.08vw;
   }
-  .sec-04 .news-wrap .news-area .tab-cont {
-    width: 100%;
-  }
+
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 2.36vw 0;
   }

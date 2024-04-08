@@ -302,7 +302,7 @@
                         </div>
                     </div>
                     <div class="event-list mo-only">
-                        <div class="swiper-container">
+                        <div class="swiper-container event-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide list slide01">
                                     <a href="#" class="list-link">
@@ -757,6 +757,7 @@
             spaceBetween: 30,
             centeredSlides: true,
             loop: true,
+            loopAdditionalSlides : 1,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -764,6 +765,18 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+        });
+
+        let swiper3 = new Swiper(".event-list.mo-only .event-swiper", {
+            slidesPerView: 'auto',
+            // spaceBetween: 30,
+            // centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: 'bullets',
+                clickable: true,
             },
         });
 
