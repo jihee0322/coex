@@ -1204,13 +1204,16 @@
     height: 17px;
   }
   .sec-04 .news-wrap .news-area .news-tab {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 18px;
   }
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 18px 0;
+  }
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .list strong {
+    font-size: 33px;
   }
   .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
     overflow: hidden;
@@ -1219,12 +1222,7 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     font-size: 20px;
-    /* padding-left: 43px;
-    font-size: 20px;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden; */
+    /* padding-left: 43px;*/
   }
   /* sec-05 */
   .sec-05 {
@@ -1541,9 +1539,6 @@
   .sec-04 {
     padding: 124px 0 144px;
   }
-  .sec-04 .news-wrap .news-area .news-tab {
-    margin-bottom: 24px;
-  }
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 20px;
   }
@@ -1553,26 +1548,23 @@
   .sec-04 .news-wrap .news-area .tab-cont ul li a {
     padding-left: 10px;
   }
-  .sec-04 .news-wrap .news-area .tab-cont .tab-list .list strong {
-    font-size: 33px;
-  }
   .sec-04 .news-wrap .news-area .tab-cont .tab-list .list span {
     font-size: 14px;
     margin-top: 0;
   }
   /* .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    font-size: 20px;
-    /* padding-left: 43px;
-    font-size: 20px;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 1;
+  	-webkit-box-orient: vertical;
+  	font-size: 20px;
+  	/* padding-left: 43px;
+  	font-size: 20px;
+  	display: inline-block;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	overflow: hidden;
   } */
   /* sec-05 */
   .sec-05 {
