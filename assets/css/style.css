@@ -1197,9 +1197,7 @@
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 18px;
   }
-  .sec-04 .news-wrap .news-area .tab-cont {
-    width: 861px;
-  }
+
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 18px 0;
   }
@@ -1941,6 +1939,7 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 4.17vw;
+    width: 100%;
   }
   .sec-04 .news-wrap .title-area .btn-more {
     margin-top: 0;
