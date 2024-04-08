@@ -589,6 +589,10 @@
   background-size: 100% auto;
 }
 
+.sec-04 .news-wrap .news-area {
+  width: 100%;
+}
+
 .sec-04 .news-wrap .news-area .news-tab {
   display: flex;
   margin-bottom: 32px;
@@ -614,7 +618,6 @@
 
 .sec-04 .news-wrap .news-area .tab-cont {
   border-top: 3px solid #000;
-  width: 100%;
 }
 
 .sec-04 .news-wrap .news-area .tab-cont ul li {
@@ -1125,9 +1128,9 @@
     padding: 54px 0 49px;
   }
   .sec-03 .title-area {
-    max-width: 1290px;
-    padding-bottom: 140px;
-    margin: 0 auto;
+    max-width: 1362px;
+    margin: 0 auto 140px;
+    padding: 0 36px;
   }
   .sec-03 .title-area h2 {
     padding-right: 31px;
