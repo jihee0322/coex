@@ -1100,14 +1100,6 @@
     margin-left: 40px;
   }
   /* sec-02 */
-  .sec-02 .event-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 156px;
-  }
-  .sec-02 .event-list .list {
-    margin-top: -2px;
-  }
   .sec-02 .event-list .list .list-link {
     padding: 26px 27px;
     height: 322px;
@@ -1435,9 +1427,7 @@
   .sec-02 .event-list {
     grid-template-columns: repeat(3, 1fr);
   }
-  .sec-02 .event-list .list {
-    margin-top: -2px;
-  }
+
   .sec-02 .event-list .list .list-link {
     padding: 30px 24px;
     height: 237px;
@@ -1763,37 +1753,72 @@
     margin-bottom: 0.97vw;
   }
   /* sec-02 */
-  .title-area h2 {
+  .sec-02 .inner{
+    padding: 0;
+  }
+
+  .sec-02 .title-area{
+    position: initial;
+    margin-bottom: 23px;
+    padding: 0 4.17vw;
+  }
+
+  .sec-02 .title-area h2 {
     font-size: 4.58vw;
   }
-  .title-area h2 span {
+  .sec-02 .title-area h2 span {
     font-size: 2.64vw;
+    right: auto;
   }
-  .sec-02 .event-list {
-    grid-template-columns: repeat(3, 1fr);
+
+  .sec-02 .event-list.pc-only {
+    display: none;
   }
+
+  .sec-02 .event-list.mo-only {
+    display: block;
+    margin-bottom: 75px;
+  }
+
+  .sec-02 .event-list.mo-only .swiper-container{
+    background-size: contain;
+    overflow: hidden;    
+    object-fit: cover;
+  }
+
+  .sec-02 .event-list .list .img-box {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0);
+  }
+
+  .sec-02 .event-list .list .img-box:hover{
+    opacity: 1;
+  }
+
   .sec-02 .event-list .list {
-    margin-top: -0.28vw;
+    margin-top: 0;
+    width: 80%;
   }
   .sec-02 .event-list .list .list-link {
-    padding: 4.17vw 3.33vw;
-    height: 32.92vw;
-    border-left: 0.28vw solid #000;
+    padding: 0;
+    height: auto;
   }
-  .sec-02 .event-list .list:nth-child(3) .list-link,
-  .sec-02 .event-list .list:nth-child(7) .list-link {
-    border-color: #000;
-  }
+
   .sec-02 .event-list .list:nth-child(2) .list-link,
   .sec-02 .event-list .list:nth-child(5) .list-link,
   .sec-02 .event-list .list:nth-child(8) .list-link {
-    border-color: transparent;
+    border-color: #000;
   }
-  .sec-02 .event-list .list .img-box:hover {
-    opacity: 0;
+
+  .sec-02 .event-list .list .txt-group {
+    padding: 20px 30px 38px;
   }
+
   .sec-02 .event-list .list .txt-group .sub-tit {
-    margin-bottom: 1.53vw;
+    margin-bottom: 4px;
+    font-size: 13px;
   }
   .sec-02 .event-list .list .txt-group .sub-tit:after {
     width: 0.97vw;
@@ -1806,6 +1831,23 @@
   .sec-02 .event-list .list .txt-group .date {
     font-size: 1.94vw;
   }
+
+  .sec-02 .swiper-container{
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .sec-02 .swiper-pagination{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 0;
+  }
+
   /* sec-03 */
   .sec-03 .ticket-wrap {
     padding: 7.36vw 0 10.42vw;

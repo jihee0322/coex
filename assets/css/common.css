@@ -255,11 +255,11 @@ img {
   white-space: nowrap;
 }
 
-.pc_only {
+.pc-only {
   display: block;
 }
 
-.mo_only {
+.mo-only {
   display: none;
 }
 
@@ -607,13 +607,14 @@ img {
   padding-left: 90px !important;
 }
 
-@media all and (max-width: 750px) {
-  .pc_only {
+@media all and (max-width: 720px) {
+  .pc-only {
     display: none;
   }
-  .mo_only {
+  .mo-only {
     display: block;
   }
+  
   /* space */
   .mt-0 {
     margin-top: 0vw !important;
