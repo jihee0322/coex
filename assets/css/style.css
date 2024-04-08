@@ -404,6 +404,7 @@
   padding: 72px 0 65px;
   background: url(../img/content/bg-ticketopen-min.jpg) no-repeat center;
 }
+
 .sec-03 .ticket-wrap::before {
   content: "";
   display: block;
@@ -535,6 +536,7 @@
   width: 100%;
   height: 100%;
 }
+
 .swiper-btn-wrap .swiper-button-prev::after,
 .swiper-btn-wrap .swiper-button-next::after {
   content: "";
@@ -561,7 +563,7 @@
   display: flex;
 }
 
-.sec-04 .news-wrap .title-area{
+.sec-04 .news-wrap .title-area {
   width: 33.3%;
   flex-shrink: 0;
 }
@@ -667,6 +669,7 @@
   background-size: cover;
   z-index: 1;
 }
+
 .sec-05::before {
   content: "";
   display: block;
@@ -825,15 +828,19 @@
 .foot-menu .line.other {
   padding: 0;
 }
+
 .foot-menu .line.other::after, .foot-menu .line.other::before {
   display: none;
 }
+
 .foot-menu .line.other ul li {
   position: relative;
 }
+
 .foot-menu .line.other ul li:nth-child(even) {
   border-left: 1px solid #000;
 }
+
 .foot-menu .line.other ul li::after {
   content: "";
   position: absolute;
@@ -842,6 +849,7 @@
   right: 16px;
   border-top: solid 1px #000;
 }
+
 .foot-menu .line.other ul li:nth-child(n+3) ::before {
   content: "";
   position: absolute;
@@ -850,6 +858,7 @@
   right: 16px;
   border-top: solid 1px #000;
 }
+
 .foot-menu .line.other ul li a {
   display: block;
   padding: 20px 0 0 26px;
@@ -1200,9 +1209,22 @@
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 18px;
   }
-
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 18px 0;
+  }
+  .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+    /* padding-left: 43px;
+    font-size: 20px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
   }
   /* sec-05 */
   .sec-05 {
@@ -1430,7 +1452,6 @@
   .sec-02 .event-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .sec-02 .event-list .list .list-link {
     padding: 30px 24px;
     height: 237px;
@@ -1526,7 +1547,6 @@
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 20px;
   }
-
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 24px 0;
   }
@@ -1540,14 +1560,20 @@
     font-size: 14px;
     margin-top: 0;
   }
-  .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
-    padding-left: 43px;
+  /* .sec-04 .news-wrap .news-area .tab-cont .tab-list .txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 20px;
+    /* padding-left: 43px;
     font-size: 20px;
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
+  } */
   /* sec-05 */
   .sec-05 {
     padding: 90px 0;
@@ -1754,16 +1780,14 @@
     margin-bottom: 0.97vw;
   }
   /* sec-02 */
-  .sec-02 .inner{
+  .sec-02 .inner {
     padding: 0;
   }
-
-  .sec-02 .title-area{
+  .sec-02 .title-area {
     position: initial;
     margin-bottom: 3.19vw;
     padding: 0 4.17vw;
   }
-
   .sec-02 .title-area h2 {
     font-size: 4.58vw;
   }
@@ -1771,33 +1795,27 @@
     font-size: 2.64vw;
     right: auto;
   }
-
   .sec-02 .event-list.pc-only {
     display: none;
   }
-
   .sec-02 .event-list.mo-only {
     display: block;
     margin-bottom: 10.42vw;
   }
-
-  .sec-02 .event-list.mo-only .swiper-container{
+  .sec-02 .event-list.mo-only .swiper-container {
     background-size: contain;
-    overflow: hidden;    
+    overflow: hidden;
     object-fit: cover;
   }
-
   .sec-02 .event-list .list .img-box {
     position: static;
     opacity: 1;
     visibility: visible;
     filter: blur(0);
   }
-
-  .sec-02 .event-list .list .img-box:hover{
+  .sec-02 .event-list .list .img-box:hover {
     opacity: 1;
   }
-
   .sec-02 .event-list .list {
     margin-top: 0;
     width: 80%;
@@ -1806,17 +1824,14 @@
     padding: 0;
     height: auto;
   }
-
   .sec-02 .event-list .list:nth-child(2) .list-link,
   .sec-02 .event-list .list:nth-child(5) .list-link,
   .sec-02 .event-list .list:nth-child(8) .list-link {
     border-color: #000;
   }
-
   .sec-02 .event-list .list .txt-group {
     padding: 2.78vw 4.17vw 5.28vw;
   }
-
   .sec-02 .event-list .list .txt-group .sub-tit {
     margin-bottom: 0.56vw;
     font-size: 1.81vw;
@@ -1832,13 +1847,11 @@
   .sec-02 .event-list .list .txt-group .date {
     font-size: 1.94vw;
   }
-
-  .sec-02 .event-swiper{
+  .sec-02 .event-swiper {
     position: relative;
     padding-bottom: 5.56vw;
   }
-
-  .sec-02 .swiper-pagination{
+  .sec-02 .swiper-pagination {
     display: block;
     width: 100%;
     position: absolute;
@@ -1848,17 +1861,14 @@
     text-align: center;
     line-height: 0;
   }
-
   .sec-02 .swiper-pagination .swiper-pagination-bullet {
     width: 1.39vw;
     height: 1.39vw;
     margin: 0 0.56vw;
-}
-
+  }
   .sec-02 .swiper-pagination .swiper-pagination-bullet-active {
     background: #000;
-}
-
+  }
   /* sec-03 */
   .sec-03 .ticket-wrap {
     padding: 7.36vw 0 10.42vw;
@@ -1967,7 +1977,6 @@
   .sec-04 .news-wrap .news-area .news-tab li a {
     font-size: 2.08vw;
   }
-
   .sec-04 .news-wrap .news-area .tab-cont ul li {
     padding: 2.36vw 0;
   }

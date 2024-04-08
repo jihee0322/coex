@@ -255,11 +255,11 @@ img {
   white-space: nowrap;
 }
 
-.pc-only {
+.pc_only {
   display: block;
 }
 
-.sec-02 .event-list.mo-only {
+.mo_only {
   display: none;
 }
 
@@ -607,14 +607,13 @@ img {
   padding-left: 90px !important;
 }
 
-@media all and (max-width: 720px) {
-  .pc-only {
+@media all and (max-width: 750px) {
+  .pc_only {
     display: none;
   }
-  .mo-only {
+  .mo_only {
     display: block;
   }
-
   /* space */
   .mt-0 {
     margin-top: 0vw !important;
@@ -955,7 +954,7 @@ img {
 }
 
 .inner {
-  max-width: 1816px;
+  max-width: 1815px;
   margin: 0 auto;
   padding: 0 48px;
 }
