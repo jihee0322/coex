@@ -402,7 +402,7 @@
 
 .sec-03 .ticket-wrap {
   padding: 72px 0 65px;
-  background: url(../img/content/bg-ticketopen-min.jpg) no-repeat center;
+  background: url(../img/content/bg-ticketopen-min.jpg) no-repeat center/100% 100%;
 }
 
 .sec-03 .ticket-wrap::before {

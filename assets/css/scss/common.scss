@@ -40,11 +40,11 @@ img {
 	white-space: nowrap;
 }
 
-.pc_only {
+.pc-only {
 	display: block;
 }
 
-.mo_only {
+.sec-02 .event-list.mo-only {
 	display: none;
 }
 
@@ -89,12 +89,12 @@ $total: 10;
 	}
 }
 
-@media all and (max-width:750px) {
-	.pc_only {
+@media all and (max-width:720px) {
+	.pc-only {
 		display: none;
 	}
 
-	.mo_only {
+	.sec-02 .event-list.mo-only {
 		display: block;
 	}
 
@@ -111,11 +111,11 @@ $total: 10;
 	@each $abbr, $pos in $position {
 		@for $i from 0 to $total {
 			.m#{$abbr}-#{$i} {
-				margin-#{$pos}: $i*1.39vw !important;
+				margin-#{$pos}: $i*1.33vw !important;
 			}
 
 			.p#{$abbr}-#{$i} {
-				padding-#{$pos}: $i*1.39vw !important;
+				padding-#{$pos}: $i*1.33vw !important;
 			}
 		}
 	}
